@@ -16,7 +16,7 @@ $data->global = new stdClass();
 
 showHeader( 'text' );
 
-print_r( $sheet->getRowData() );
+//print_r( $sheet->getRowData() );
 foreach( $sheet->getRowData() as $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
   switch( $row['SECTION'] ) {
