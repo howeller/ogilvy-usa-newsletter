@@ -16,7 +16,7 @@ function makeModule( $row ) {
   $module->BODYCOPY = $row['BODY COPY'];
   $module->IMAGE = $row['IMAGE'];
   $module->LINKURL = $row['LINK URL'];
-  
+  $module->TEMPLATE = strtolower($name).'.tpl';  
   return( $module );
 }
 
@@ -58,10 +58,10 @@ foreach( $sheet->getRowData() as $row ) {
   }
 }
 
-showHeader( 'text' );
-print_r( $data );
-exit;
-print renderTemplate( 'templates/email_template_sc.tpl', $data );
+//showHeader( 'text' );
+//print_r( $data );
+//exit;
+print renderTemplate( 'templates/email_template.tpl', $data );
 
 
 ?>

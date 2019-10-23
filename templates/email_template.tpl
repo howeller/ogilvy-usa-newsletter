@@ -171,13 +171,13 @@
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<!-- Hero : Start -->
-						{{if isset($global->HERO->IMAGE}}}<tr>
+						{{if isset($global->HERO->IMAGE)}}<tr>
 							<td align="center" style="margin: 0;">
 								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
 								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
-											<a href="{{$global->HERO->LINK_URL}}" target="_blank" style="text-decoration: none;">
+											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none;">
 												<img src="{{$global->HERO->IMAGE}}" alt="HERO" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif;">
 											</a>
 										</td>
@@ -194,11 +194,11 @@
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td class="hero-h1" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">
-											<a href="{{$global->HERO->LINK_URL}}" target="_blank" style="text-decoration: none; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">{{$global->HERO->TITLE}}</a>
+											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">{{$global->HERO->TITLE}}</a>
 										</td>
 									</tr>
 									<tr>
-										<td class="hero-body-txt" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px;">{{$global->HERO->BODY_COPY}}</td>
+										<td class="hero-body-txt" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px;">{{$global->HERO->BODYCOPY}}</td>
 									</tr>
 								</table>
 							</td>
@@ -242,16 +242,9 @@
 									<tr>
 										<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 									</tr>
-									{{* Module Separator *}}
-									<tr>
-										<td class="mod-recap-title" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 15px; line-height: 18px; padding-bottom: 5px;">{{$module->TITLE}}</td>
-									</tr>
-									{{* Module Link *}}
-									<tr>
-										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
-											<a href="{{$module->LINK_URL}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">{{$module->TITLE}}</a>
-										</td>
-									</tr>
+									{{foreach $bottom as $module}}  
+									  {{include file=$module->TEMPLATE}}
+									{{/foreach}}
 								</table>
 								<!-- Links Section : End  -->
 							</td>
