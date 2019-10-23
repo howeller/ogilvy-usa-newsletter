@@ -170,15 +170,15 @@
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
-						<tr>
-							<!-- Hero : Start -->
+						<!-- Hero : Start -->
+						{{if isset($global->HERO->IMAGE}}}<tr>
 							<td align="center" style="margin: 0;">
 								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
 								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/658eea79-8fea-42e1-8f94-1703085dee5d.jpg" alt="HERO" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif;">
+												<img src="{{$global->HERO->IMAGE}}" alt="HERO" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif;">
 											</a>
 										</td>
 									</tr>
@@ -188,23 +188,23 @@
 						</tr>
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
-						<tr>
+						</tr>{{/if}}
+						{{if isset($global->HERO->TITLE)}}<tr>
 							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
-										<td class="hero-h1" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">OGILVY HERO HEADLINE COPY HERE</td>
+										<td class="hero-h1" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">{{$global->HERO->TITLE}}</td>
 									</tr>
 									<tr>
-										<td class="hero-body-txt" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+										<td class="hero-body-txt" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px;">{{$global->HERO->BODY_COPY}}</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
-						<!-- Hero : End -->
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
+						</tr>{{/if}}
+						<!-- Hero : End -->
 					</table>
 				</td>
 			</tr>
@@ -215,248 +215,55 @@
 			<tr>
 				<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 			</tr>
+			<!-- CARD ROW : Start -->
 			<tr>
-				<!-- CARD ROW 1 : Start -->
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
-					<!-- Card Module 1: Start -->
+					{{* Begin Module pair wrapper *}}
 					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
-						<tr>
-							<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-								<table class="mod-card-wrapper" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
-									<tr>
-										<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="mod-img" align="center" border="0" width="277" alt="image1" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/e97e046b-0812-4cfd-ba2a-ad41a29ff16b.jpg" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="margin: 0;">
-											<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-												<tr>
-													<td class="card-title" align="left" valign="top" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px; padding-bottom: 5px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px;">TITLE 1</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">SUBTITLE 1</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="body-text" style="margin: 0; color: #545659; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; line-height: 17px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<!-- Card Module 1 : End -->
+					<!-- Card Module Left: Start -->{{* CARD MODULE LEFT *}}<!-- Card Module Left: End -->
+					{{* Divider for module pairs *}}
 					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module 2 : Start -->
-					<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
-						<tr>
-							<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-								<table class="mod-card-wrapper" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
-									<tr>
-										<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="mod-img" align="center" border="0" width="277" alt="image2" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/c7813986-fd76-411c-9fd8-8f4945cb9291.jpg" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="margin: 0;">
-											<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-												<tr>
-													<td class="card-title" align="left" valign="top" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px; padding-bottom: 5px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px;">TITLE 2</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">SUBTITLE 2</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="body-text" style="margin: 0; color: #545659; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; line-height: 17px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-					<!-- Card Module 2 : End -->
-				</td>
-				<!-- CARD ROW 1 : End -->
-			</tr>
-			<tr>
-				<!-- CARD ROW 2 : Start -->
-				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
-					<!-- Card Module 3: Start -->
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
-						<tr>
-							<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-								<table class="mod-card-wrapper" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
-									<tr>
-										<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="mod-img" align="center" border="0" width="277" alt="image3" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/801f2fb2-4167-46f4-bb30-5a925ab94397.png" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="margin: 0;">
-											<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-												<tr>
-													<td class="card-title" align="left" valign="top" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px; padding-bottom: 5px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px;">TITLE 3</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">SUBTITLE 3</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="body-text" style="margin: 0; color: #545659; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; line-height: 17px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<!-- Card Module 3 : End -->
-					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module 4 : Start -->
-					<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
-						<tr>
-							<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-								<table class="mod-card-wrapper" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
-									<tr>
-										<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="mod-img" align="center" border="0" width="277" alt="image4" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/e0e6db4e-1caa-413d-ab19-c59d15355c98.jpg" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="margin: 0;">
-											<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-												<tr>
-													<td class="card-title" align="left" valign="top" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px; padding-bottom: 5px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px;">TITLE 4</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">SUBTITLE 4</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="body-text" style="margin: 0; color: #545659; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; line-height: 17px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-					<!-- Card Module 4 : End -->
-				</td>
-				<!-- CARD ROW 2 : End -->
-			</tr>
-			<tr>
-				<!-- CARD ROW 3 : Start -->
-				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
-					<!-- Card Module 3: Start -->
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
-						<tr>
-							<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-								<table class="mod-card-wrapper" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
-									<tr>
-										<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="mod-img" align="center" border="0" width="277" alt="image3" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/801f2fb2-4167-46f4-bb30-5a925ab94397.png" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td align="left" valign="top" style="margin: 0;">
-											<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-												<tr>
-													<td class="card-title" align="left" valign="top" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px; padding-bottom: 5px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 13px; line-height: 15px;">TITLE 5</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-														<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">SUBTITLE 5</a>
-													</td>
-												</tr>
-												<tr>
-													<td class="body-text" style="margin: 0; color: #545659; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; line-height: 17px; font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					<!-- Card Module 3 : End -->
+					<!-- Card Module Right : Start -->{{* CARD MODULE RIGHT *}}<!-- Card Module Right : End -->
+					{{* End Module pair wrapper *}}
 					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 				</td>
-				<!-- CARD ROW 3 : End -->
 			</tr>
+			<!-- CARD ROW : End -->
 			<!-- Prefooter : Start -->
 			<tr>
 				<td align="center" style="margin: 0;">
 					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
 							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
-								<!-- Recap/Links Section : Start  -->
+								<!-- Links Section : Start  -->
 								<table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 									</tr>
+									{{* Module Separator Start *}}
 									<tr>
 										<td class="mod-recap-title" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 15px; line-height: 18px; padding-bottom: 5px;">DID YOU KNOW?</td>
 									</tr>
+									{{* Module Link *}}
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
 										</td>
 									</tr>
+									{{* Module Link *}}
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
 										</td>
 									</tr>
+									{{* Module Link *}}
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
 										</td>
 									</tr>
 								</table>
-								<!-- Recap/Links Section : End  -->
+								<!-- Links Section : End  -->
 							</td>
 						</tr>
 						<tr>
