@@ -185,7 +185,6 @@
 								</table>
 								<!--[if (gte mso 9)|(IE)]></td></tr></tbody></table><![endif]-->
 							</td>
-							<!-- Hero : End -->
 						</tr>
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
@@ -202,6 +201,7 @@
 								</table>
 							</td>
 						</tr>
+						<!-- Hero : End -->
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
@@ -216,7 +216,7 @@
 				<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 			</tr>
 			<tr>
-				<!-- ROW 1 : Start -->
+				<!-- CARD ROW 1 : Start -->
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
 					<!-- Card Module 1: Start -->
 					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
@@ -296,10 +296,10 @@
 					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					<!-- Card Module 2 : End -->
 				</td>
-				<!-- ROW 1 : End -->
+				<!-- CARD ROW 1 : End -->
 			</tr>
 			<tr>
-				<!-- ROW 2 : Start -->
+				<!-- CARD ROW 2 : Start -->
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
 					<!-- Card Module 3: Start -->
 					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
@@ -379,10 +379,10 @@
 					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					<!-- Card Module 4 : End -->
 				</td>
-				<!-- ROW 2 : End -->
+				<!-- CARD ROW 2 : End -->
 			</tr>
 			<tr>
-				<!-- ROW 3 : Start -->
+				<!-- CARD ROW 3 : Start -->
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
 					<!-- Card Module 3: Start -->
 					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
@@ -424,33 +424,39 @@
 					<!-- Card Module 3 : End -->
 					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 				</td>
-				<!-- ROW 3 : End -->
+				<!-- CARD ROW 3 : End -->
 			</tr>
 			<!-- Prefooter : Start -->
 			<tr>
 				<td align="center" style="margin: 0;">
 					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
-							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="email-container-inner" align="left" style="margin: 0; vertical-align: top;">
-								<!-- Recap Section : Start  -->
-								<table class="mod-footer" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
+								<!-- Recap/Links Section : Start  -->
+								<table border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+									<tr>
+										<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
+									</tr>
 									<tr>
 										<td class="mod-recap-title" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 15px; line-height: 18px; padding-bottom: 5px;">DID YOU KNOW?</td>
 									</tr>
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-											<br><br>
+										</td>
+									</tr>
+									<tr>
+										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-											<br><br>
+										</td>
+									</tr>
+									<tr>
+										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
 											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
 										</td>
 									</tr>
 								</table>
-								<!-- Recap Section : End  -->
+								<!-- Recap/Links Section : End  -->
 							</td>
 						</tr>
 						<tr>
