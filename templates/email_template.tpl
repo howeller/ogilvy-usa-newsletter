@@ -154,13 +154,13 @@
 								<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td align="left" style="margin: 0;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="header-title" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/9140cd1e-fe84-4350-9a63-1757a5dab659.png" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 123px; height: 61px;">
+											<a href="https://www.ogilvy.com" target="_blank" style="text-decoration: none;">
+												<img class="header-title" src="./templates/images/header_title_white_2x.png" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 123px; height: 61px;">
 											</a>
 										</td>
 										<td align="right" valign="middle" style="margin: 0;">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="header-logo" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/5c0f3499-1b3a-41e6-a48d-d323324fd7f3.png" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 120px; height: 47px; vertical-align: middle;">
+											<a href="https://www.ogilvy.com" target="_blank" style="text-decoration: none;">
+												<img class="header-logo" src="./templates/images/header_logo_white_2x.png" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 120px; height: 47px; vertical-align: middle;">
 											</a>
 										</td>
 									</tr>
@@ -177,7 +177,7 @@
 								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="{{$global->HERO->LINK_URL}}" target="_blank" style="text-decoration: none;">
 												<img src="{{$global->HERO->IMAGE}}" alt="HERO" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif;">
 											</a>
 										</td>
@@ -193,7 +193,9 @@
 							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
-										<td class="hero-h1" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">{{$global->HERO->TITLE}}</td>
+										<td class="hero-h1" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">
+											<a href="{{$global->HERO->LINK_URL}}" target="_blank" style="text-decoration: none; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0;">{{$global->HERO->TITLE}}</a>
+										</td>
 									</tr>
 									<tr>
 										<td class="hero-body-txt" style="margin: 0; color: #ffffff; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px;">{{$global->HERO->BODY_COPY}}</td>
@@ -240,26 +242,14 @@
 									<tr>
 										<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 									</tr>
-									{{* Module Separator Start *}}
+									{{* Module Separator *}}
 									<tr>
-										<td class="mod-recap-title" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 15px; line-height: 18px; padding-bottom: 5px;">DID YOU KNOW?</td>
+										<td class="mod-recap-title" style="margin: 0; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 15px; line-height: 18px; padding-bottom: 5px;">{{$module->TITLE}}</td>
 									</tr>
 									{{* Module Link *}}
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-										</td>
-									</tr>
-									{{* Module Link *}}
-									<tr>
-										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-										</td>
-									</tr>
-									{{* Module Link *}}
-									<tr>
-										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
-											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+											<a href="{{$module->LINK_URL}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">{{$module->TITLE}}</a>
 										</td>
 									</tr>
 								</table>
@@ -275,31 +265,31 @@
 									<tr>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/ca9932aa-b919-418d-9361-22e80c178276.png" alt="facebook" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="./templates/images/social_facebook_red_2x.png" alt="facebook" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/498b72cc-509c-4318-8bfc-7a5366e8e743.png" alt="twitter" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="./templates/images/social_twitter_red_2x.png" alt="twitter" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/07fd72db-d7ca-4461-88c3-6c10cb97d8c4.png" alt="instagram" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="./templates/images/social_instagram_red_2x.png" alt="instagram" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/5b7b63c2-4d4e-4371-b036-2d294eaba804.png" alt="linkedin" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="./templates/images/social_linkedin_red_2x.png" alt="linkedin" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/74557c94-9107-43fc-8cb1-d358b6640fc2.png" alt="youtube" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="./templates/images/social_youtube_red_2x.png" alt="youtube" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 									</tr>
@@ -329,7 +319,7 @@
 									<tr>
 										<th class="footer-item-container" align="left" width="201">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="footer-tagline" src="https://gallery.mailchimp.com/5bfd981dd9c6d24acf61309a5/images/140f8c3e-45a2-4354-b291-065cc8a8f75e.png" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 204px; height: 48px;">
+												<img class="footer-tagline" src="./templates/images/footer_tagline_white_2x.png" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 204px; height: 48px;">
 											</a>
 										</th>
 										<th class="footer-item-container" valign="middle">
