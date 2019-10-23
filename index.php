@@ -26,12 +26,12 @@ foreach( $sheet->getRowData() as $row ) {
     
     case 'BODY':
       $module = new stdClass();
-      $module->name = $name;
-      $module->title = $row['TITLE'];
-      $module->subtitle = $row['SUBTITLE'];
-      $module->bodycopy = $row['BODY COPY'];
-      $module->image = $row['IMAGE'];
-      $module->linkurl = $row['LINK URL'];
+      $module->NAME = $name;
+      $module->TITLE = $row['TITLE'];
+      $module->SUBTITLE = $row['SUBTITLE'];
+      $module->BODYCOPY = $row['BODY COPY'];
+      $module->IMAGE = $row['IMAGE'];
+      $module->LINKURL = $row['LINK URL'];
       $data->modules[] = $module;
       break;
     
