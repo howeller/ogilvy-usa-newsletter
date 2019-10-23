@@ -9,7 +9,7 @@
 	<!--[if !mso]><!-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--<![endif]-->
-	<title>Ogilvy Test</title>
+	<title>The Pulse : Ogilvy</title>
 	<!--[if (gte mso 9)|(IE)]>
 	<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
 	<![endif]-->
@@ -116,7 +116,7 @@
 		}
 		/* Smaller screens */
 		@media screen and (max-width:500px) {
-			.mod-img, .mod-img-wrapper, .mod-text-wrapper, .footer-column{
+			.mod-img, .mod-img-wrapper, .mod-card-wrapper{
 				display:block !important;
 				width: 100% !important;
 				max-width: 100% !important;
@@ -124,10 +124,10 @@
 				float: none!important;
 				clear: both!important;
 			}
-			.footer-column {
+			/*.footer-column {
 				text-align: center !important;
 				float: middle !important;
-			}
+			}*/
 			img.social-btn{ padding-bottom: 20px !important }
 			.mod-gap{	font-size:10px !important; line-height:10px !important }
 			.social-gap{width: 5px !important;}
@@ -135,64 +135,12 @@
 				display:block !important;
 			}
 		}
-</style>{{* <!-- <style type="text/css">
-div.error-wrapper ul{
-	display:inline-block;
-}
-div.error-wrapper li { 
-	color: #f5bac5; /* Ogilvy Pink */
-	font-size: 14px;
-	line-height: 15px;
-	padding-bottom: 5px;
-	/*padding: 5px;*/
-}
-div.error-wrapper li:nth-child(3n+2) {
-	color: #d6d675;/* Ogilvy Yellow */
-}
-div.error-wrapper li:nth-child(3n+3) {
-	color: #a6a6a8;/* Ogilvy Light Gray */
-}
-/* 
-	Previously inlined fron errorBox.css
-*/
-div.error-wrapper{
-	background-color: #24298f;/* Ogilvy Blue */
-	/*background-color: #545659;*//* Ogilvy Gray */
-	border: 5px solid #eb3f43;/* Ogilvy Red */
-	border-radius: 15px;
-	color: #eb3f43;/* Ogilvy Red */
-	display: block;
-	font-family: OgilvySans,Arial, sans-serif;
-	font-weight: bold;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	position: absolute;
-	width: 100%;
-	max-width: 760px;
-}
-div.error-wrapper h1{
-	position: relative;
-	display:inline-block;
-	font-size: 20px;
-	line-height: 23px;
-	padding-left: 25px;
-}
-img.error-logo{
-	width:100px;
-	max-width:100px;
-	height: auto;
-	max-height: 73px;
-	display:inline-block;
-	padding: 15px;
-	float: right;
-}
-</style> -->*}}
+</style>
 </head>
 
 <body style="background: white; font-family: OgilvySans,Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
-	<div class="hide" style="color: #ffffff; display: none; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">{{$GLOBAL['INVISIBLE PREHEADER TEXT']}}</div>
-	<center style="width: 100%; background: white; text-align: center; vertical-align: top;">
+	<div class="hide" style="color: #ffffff; display: none; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">{{$global->HEADER_PREHEADER_TEXT}}</div>
+		<center style="width: 100%; background: white; text-align: center; vertical-align: top;">
 		<!-- Email Header : BEGIN -->
 		<table class="fullbleed-container" align="center" bgcolor="#eb3f43" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; background-color: #eb3f43;">
 			<tr>
@@ -478,6 +426,7 @@ img.error-logo{
 				</td>
 				<!-- ROW 3 : End -->
 			</tr>
+			<!-- Prefooter : Start -->
 			<tr>
 				<td align="center" style="margin: 0;">
 					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
@@ -493,9 +442,11 @@ img.error-logo{
 									</tr>
 									<tr>
 										<td class="mod-recap-body-txt" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; padding-top: 10px;">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+											<br><br>
+											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+											<br><br>
+											<a href="###" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
 										</td>
 									</tr>
 								</table>
@@ -548,6 +499,7 @@ img.error-logo{
 					</table>
 				</td>
 			</tr>
+			<!-- Prefooter : End -->
 		</table>
 		<!-- Email Body : End -->
 		<!-- Red Footer : Start -->
