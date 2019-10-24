@@ -27,10 +27,17 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
   switch( $row['SECTION'] ) {
     case 'GLOBAL':
-      if( $name == 'HERO' ) {
-        $data->global->$name = makeModule( $row );
-      } else {
-        $data->global->$name = $row['TITLE'];
+      switch( $name ) {
+        case 'HERO':
+          $data->global->$name = makeModule( $row );
+          break;
+        
+        case 'THEME':
+          $data->global->$name = strtoupper( $row['TITLE'] );
+          break;
+        
+        default:
+          $data->global->$name = $row['TITLE'];
       }
       break;
 

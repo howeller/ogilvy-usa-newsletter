@@ -1,3 +1,16 @@
+{{if $global->THEME=='BLUE'}}
+  {{$foreground = 'blueforevalue'}}
+  {{$background = 'bluebackvalue'}}
+  {{$logo='http://server.com/bluelogo.jpg'}}
+{{elseif $global->THEME=='WHITE'}}
+  {{$foreground = 'whiteforevalue'}}
+  {{$background = 'whitebackvalue'}}
+  {{$logo='http://server.com/whitelogo.jpg'}}
+{{else}}
+  {{$foreground = 'redforevalue'}}
+  {{$background = 'redbackvalue'}}
+  {{$logo='http://server.com/redlogo.jpg'}}
+{{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" style="background: white; font-family: OgilvySans,Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
 
