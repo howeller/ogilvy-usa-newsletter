@@ -219,22 +219,26 @@
 			</tr>
 			{{foreach $body as $modulePair}}
 			<!-- CARD ROW : Start -->
-			  {{if count($modulePair) == 2}}
-          <tr>
-            <td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
-              {{* Begin Module pair wrapper *}}
-              <!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-              <!-- Card Module Left: Start -->{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}<!-- Card Module Left: End -->
-              {{* Divider for module pairs *}}
-              <!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-              <!-- Card Module Right : Start -->{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
-              {{* End Module pair wrapper *}}
-              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-            </td>
-          </tr>
-        {{else}}
-          {{** Eric - add markup for a row with a single module **}}
-        {{/if}}
+				{{if count($modulePair) == 2}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{* Begin Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
+					<!-- Card Module Left: Start -->{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}<!-- Card Module Left: End -->
+					{{* Divider for module pairs *}}
+					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
+					<!-- Card Module Right : Start -->{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
+					{{* End Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+				</td>
+			</tr>
+			{{else}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
+				</td>
+			</tr>
+			{{/if}}
 			<!-- CARD ROW : End -->
 			{{/foreach}}
 			<!-- Prefooter : Start -->
@@ -249,7 +253,7 @@
 										<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 									</tr>
 									{{foreach $bottom as $module}}  
-									  {{include file=$module->TEMPLATE}}
+									{{include file=$module->TEMPLATE}}
 									{{/foreach}}
 								</table>
 								<!-- Links Section : End  -->
