@@ -230,7 +230,7 @@
 					{{* Divider for module pairs *}}
 					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
 					<!-- Card Module Right : Start -->
-			    {{assign var=moduleCount value=$moduleCount+1}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
+			    {{assign var=moduleCount value=$moduleCount+1}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
 					{{* End Module pair wrapper *}}
 					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 				</td>
