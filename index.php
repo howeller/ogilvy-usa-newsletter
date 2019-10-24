@@ -1,39 +1,29 @@
 <?php
-require_once( 'lib/dxa_smartsheet.inc' );
-require_once( 'lib/dxa_utility.inc' );
-require_once( 'lib/config.inc' );
+require( 'lib/dxa_smartsheet.inc' );
+require( 'lib/dxa_utility.inc' );
+require( 'lib/config.inc' );
+require( 'lib/functions.inc' );
 require( 'vendor/autoload.php' );
 
 $config = $GLOBALS['config'];
 
-function makeModule( $row ) {
-  $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
-  
-  $module = new stdClass();
-  $module->NAME = $name;
-  $module->TITLE = $row['TITLE'];
-  $module->SUBTITLE = $row['SUBTITLE'];
-  $module->BODYCOPY = $row['BODY COPY'];
-  $module->IMAGE = $row['IMAGE'];
-  $module->LINKURL = $row['LINK URL'];
-  $module->TEMPLATE = strtolower($name).'.tpl';  
-  return( $module );
-}
+$action = $_REQUEST['action'] ?? 'html';
 
 try {
   $sheet = new SS_Sheet( $config->key, $config->contentSheetId );
 } catch( Exception $e ) {
-  print 'Error: '.$e->getMessage();
+  showError( 'Error: '.$e->getMessage() );
   exit;
 }
 
 $data = new stdClass();
+$data->errors = [];
 $data->global = new stdClass();
 $data->body = [];
 $data->bottom = [];
 $bodyModules = [];
 
-foreach( $sheet->getRowData() as $row ) {
+foreach( $sheet->getRowData() as $rowIndex => $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
   switch( $row['SECTION'] ) {
     case 'GLOBAL':
@@ -53,17 +43,34 @@ foreach( $sheet->getRowData() as $row ) {
       break;
     
     default:
-      // ERROR
+      $data->errors[] = 'Unknown section '.$row['SECTION'].' in row '.($rowIndex+1);
       break;
   }
 }
 
+if( empty( $bodyModules ) ) {
+  $data->errors[] = 'No BODY (card) modules defined';
+}
+
+if( !empty( $data->errors ) ) {
+  print renderTemplate( $config->errorTemplate, $data );
+  exit;
+}
+
 $data->body = array_chunk( $bodyModules, 2 );
 
-//showHeader( 'text' );
-//print_r( $data );
-//exit;
-print renderTemplate( 'templates/email_template.tpl', $data );
-
+switch( $action ) {
+  case 'debug':
+    showHeader( 'text' );
+    print_r( $data );
+    exit;
+  
+  case 'html':
+    print renderTemplate( $config->mainTemplate, $data );
+    break;
+  
+  default:
+    showError( 'Unknown action '.$action );
+}
 
 ?>
