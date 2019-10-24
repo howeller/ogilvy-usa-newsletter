@@ -6,7 +6,7 @@
 								{{if $module->IMAGE != ''}}<tr>
 									<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
 										<a href="{{$module->LINKURL}}" target="_blank" style="text-decoration: none;">
-											<img class="mod-img" align="center" border="0" width="277" alt="{{$module->TITLE}}" src="{{$module->IMAGE}}" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px;">
+											<img class="mod-img mod-img-alt-txt" align="center" border="0" width="277" alt="{{$module->TITLE}}" src="{{$module->IMAGE}}" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; max-width: 277px; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 20px; line-height: 22px; text-align: center; color: {{$THEME_TXT_COLOR}};">
 										</a>
 									</td>
 								</tr>{{/if}}

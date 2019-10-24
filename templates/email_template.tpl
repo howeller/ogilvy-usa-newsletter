@@ -208,11 +208,11 @@
 						{{if isset($global->HERO->IMAGE)}}<tr>
 							<td align="center" style="margin: 0;">
 								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
-								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
+								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
 									<tr>
-										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto; background-color: #00aeef;">
+										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none;">
-												<img src="{{$global->HERO->IMAGE}}" alt="HERO" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal;">
+												<img src="{{$global->HERO->IMAGE}}" alt="{{$global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 									</tr>
