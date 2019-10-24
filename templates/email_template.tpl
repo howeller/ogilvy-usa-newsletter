@@ -188,12 +188,12 @@
 								<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td align="left" style="margin: 0;">
-											<a href="https://www.ogilvy.com" target="_blank" style="text-decoration: none;">
+											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
 												<img class="header-title header-alt-txt" src="{{$THEME_TITLE_IMG}}" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 123px; height: 61px; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 										<td align="right" valign="middle" style="margin: 0;">
-											<a href="https://www.ogilvy.com" target="_blank" style="text-decoration: none;">
+											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
 												<img class="header-logo header-alt-txt" src="{{$THEME_LOGO_IMG}}" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 120px; height: 47px; vertical-align: middle; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
@@ -304,31 +304,31 @@
 								<table class="social-container" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="https://www.facebook.com/ogilvy" target="_blank" style="text-decoration: none;">
 												<img src="{{$THEME_FACEBOOK_IMG}}" alt="facebook" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="https://twitter.com/Ogilvy" target="_blank" style="text-decoration: none;">
 												<img src="{{$THEME_TWITTER_IMG}}" alt="twitter" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="https://instagram.com/ogilvy/" target="_blank" style="text-decoration: none;">
 												<img src="{{$THEME_INSTAGRAM_IMG}}" alt="instagram" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="https://www.linkedin.com/company/ogilvy/" target="_blank" style="text-decoration: none;">
 												<img src="{{$THEME_LINKEDIN_IMG}}" alt="linkedin" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="###" target="_blank" style="text-decoration: none;">
+											<a href="https://www.youtube.com/user/Ogilvy/featured" target="_blank" style="text-decoration: none;">
 												<img src="{{$THEME_YOUTUBE_IMG}}" alt="youtube" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
 											</a>
 										</td>
@@ -367,7 +367,7 @@
 												<tr>
 													<td class="footer-txt" valign="middle" style="margin: 0; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};">
 														<b>Contributions. Questions, Feedback.</b><br>
-														Please email <a class="footer-txt" href="mailto:david.ford@ogilvy.com" target="_blank" style="text-decoration: none; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};"><span class="footer-txt" style="font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};">david.ford@ogilvy.com</span></a>
+														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};"><span class="footer-txt" style="font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};">{{$global->FOOTER_LINK_TEXT}}</span></a>
 													</td>
 												</tr>
 											</table>
