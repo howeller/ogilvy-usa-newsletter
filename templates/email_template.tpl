@@ -305,31 +305,31 @@
 									<tr>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="https://www.facebook.com/ogilvy" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_FACEBOOK_IMG}}" alt="facebook" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="{{$THEME_FACEBOOK_IMG}}" alt="facebook" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="https://twitter.com/Ogilvy" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_TWITTER_IMG}}" alt="twitter" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="{{$THEME_TWITTER_IMG}}" alt="twitter" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="https://instagram.com/ogilvy/" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_INSTAGRAM_IMG}}" alt="instagram" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="{{$THEME_INSTAGRAM_IMG}}" alt="instagram" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="https://www.linkedin.com/company/ogilvy/" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_LINKEDIN_IMG}}" alt="linkedin" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="{{$THEME_LINKEDIN_IMG}}" alt="linkedin" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
 											</a>
 										</td>
 										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
 										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
 											<a href="https://www.youtube.com/user/Ogilvy/featured" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_YOUTUBE_IMG}}" alt="youtube" class="social-btn" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 47px; height: 47px;">
+												<img src="{{$THEME_YOUTUBE_IMG}}" alt="youtube" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
 											</a>
 										</td>
 									</tr>
@@ -359,7 +359,7 @@
 									<tr>
 										<th class="footer-item-container" align="left" width="201">
 											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="footer-tagline" src="{{$THEME_TAGLINE_IMG}}" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 204px; height: 48px; color: {{$THEME_TXT_COLOR}};">
+												<img class="footer-tagline footer-alt-txt" src="{{$THEME_TAGLINE_IMG}}" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 204px; height: 48px; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</th>
 										<th class="footer-item-container" valign="middle">
