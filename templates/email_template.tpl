@@ -232,6 +232,8 @@
               <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
             </td>
           </tr>
+        {{else}}
+          {{** Eric - add markup for a row with a single module }}
         {{/if}}
 			<!-- CARD ROW : End -->
 			{{/foreach}}
