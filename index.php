@@ -31,7 +31,7 @@ $data = new stdClass();
 $data->global = new stdClass();
 $data->body = [];
 $data->bottom = [];
-
+$bodyModules = [];
 
 foreach( $sheet->getRowData() as $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
@@ -45,7 +45,7 @@ foreach( $sheet->getRowData() as $row ) {
       break;
 
     case 'BODY':
-      $data->body[] = makeModule( $row );
+      $bodyModules[] = makeModule( $row );
       break;
     
     case 'BOTTOM':
@@ -57,6 +57,8 @@ foreach( $sheet->getRowData() as $row ) {
       break;
   }
 }
+
+$data->body = array_chunk( $bodyModules, 2 );
 
 //showHeader( 'text' );
 //print_r( $data );

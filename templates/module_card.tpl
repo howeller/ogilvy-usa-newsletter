@@ -20,7 +20,7 @@
 											</tr>
 											<tr>
 												<td class="card-subtitle" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px; padding-bottom: 10px;">
-													<a href="{{$module->LINKURL}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">{{$module->SUBTITLE}}}</a>
+													<a href="{{$module->LINKURL}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 16px; line-height: 18px;">{{$module->SUBTITLE}}</a>
 												</td>
 											</tr>
 											<tr>
