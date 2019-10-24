@@ -1,4 +1,4 @@
-<!-- Card Module : Start Module {{$moduleCount}} -->
+<!-- Card Module {{$moduleCount}} : Start -->
 				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
 					<tr>
 						<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
@@ -35,4 +35,4 @@
 						</td>
 					</tr>
 				</table>
-				<!-- Card Module : End Module {{$moduleCount}} -->
+				<!-- Card Module {{$moduleCount}} : End -->
