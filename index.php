@@ -8,6 +8,10 @@ require( 'vendor/autoload.php' );
 $config = $GLOBALS['config'];
 
 $action = $_REQUEST['action'] ?? 'html';
+if( $action == 'email' && $config->server === false ) {
+	showError( 'Cannot send preview email from local machine' );
+	exit;
+}
 
 try {
   $sheet = new SS_Sheet( $config->key, $config->contentSheetId );
@@ -49,6 +53,9 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
       $data->bottom[] = makeModule( $row );
       break;
     
+    case '':
+      break;
+    
     default:
       $data->errors[] = 'Unknown section '.$row['SECTION'].' in row '.($rowIndex+1);
       break;
@@ -59,21 +66,35 @@ if( empty( $bodyModules ) ) {
   $data->errors[] = 'No BODY (card) modules defined';
 }
 
+$data->body = array_chunk( $bodyModules, 2 );
+
+if( $action == 'debug' ) {
+  showHeader( 'text' );
+  print_r( $data );
+  exit;
+}
+
 if( !empty( $data->errors ) ) {
   print renderTemplate( $config->errorTemplate, $data );
   exit;
 }
 
-$data->body = array_chunk( $bodyModules, 2 );
+$emailCode = renderTemplate( $config->mainTemplate, $data );
+$version = str_replace( ' ', '_', $data->global->VERSION ); // for export action
 
 switch( $action ) {
-  case 'debug':
-    showHeader( 'text' );
-    print_r( $data );
-    exit;
-  
   case 'html':
-    print renderTemplate( $config->mainTemplate, $data );
+    print $emailCode;
+    break;
+  
+  case 'email':
+    $toEmail = getEmailAddresses( $config );
+    sendMimeMail( $config->fromName, $config->FromAddress, $toEmail, $config->subjectPrefix.'-'.$version , $code );
+    break;
+  
+  case 'export':
+    showHeader( 'download', $config->downloadPrefix.str_replace( ' ', '_', $version ).'.html' );
+    print $emailCode;
     break;
   
   default:

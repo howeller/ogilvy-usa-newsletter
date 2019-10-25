@@ -18,10 +18,5 @@ if( strpos( $_SERVER['SERVER_NAME'], 'ogilvy-digital.com' ) === false ) {
   $config->server = false;
 }
 
-/*
-$config->leftAllowed = ['MODULE_PIC_RIGHT', 'MODULE_PIC_LEFT', 'MODULE_SECTION_TITLE'];
-$config->rightAllowed = ['MODULE_PIC_TOP', 'MODULE_SECTION_TITLE'];
-*/
-
 $GLOBALS['config'] = $config;
 ?>
