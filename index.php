@@ -89,7 +89,8 @@ switch( $action ) {
   
   case 'email':
     $toEmail = getEmailAddresses( $config );
-    sendMimeMail( $config->fromName, $config->FromAddress, $toEmail, $config->subjectPrefix.'-'.$version , $code );
+    sendMimeMail( $config->fromName, $config->FromAddress, $toEmail, $config->subjectPrefix.'-'.$version , $emailCode );
+    print 'Email sent';
     break;
   
   case 'export':
