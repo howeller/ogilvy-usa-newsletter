@@ -46,6 +46,10 @@ function showHeader( $type='html', $fileName='' ) {
     case 'html':
       header( 'Content-Type: text/html; charset=utf-8' );
       break;
+    
+    case 'reload':
+      header( 'Location: '.$_SERVER['PHP_SELF'] ); die;
+      break;
   }
 }
 
