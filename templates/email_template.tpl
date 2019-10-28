@@ -1,36 +1,37 @@
 {{if $global->THEME=='BLUE'}}
 	{{$THEME_BACKGROUND_COLOR = '#24298f'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='./templates/images/header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='./templates/images/header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='./templates/images/social_facebook_blue_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='./templates/images/social_instagram_blue_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='./templates/images/social_linkedin_blue_2x.png'}}
-	{{$THEME_TWITTER_IMG='./templates/images/social_twitter_blue_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='./templates/images/social_youtube_blue_2x.png'}}
-	{{$THEME_TAGLINE_IMG='./templates/images/footer_tagline_red_2x.png'}}
+	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270617-social_facebook_blue_2x.pnggulp'}}
+	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037853-social_instagram_blue_2x.png'}}
+	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270592-social_linkedin_blue_2x.png'}}
+	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037784-social_twitter_blue_2x.png'}}
+	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037802-social_youtube_blue_2x.png'}}
+	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
 {{elseif $global->THEME=='WHITE'}}
 	{{$THEME_BACKGROUND_COLOR = '#ffffff'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='./templates/images/header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='./templates/images/header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='./templates/images/social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='./templates/images/social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='./templates/images/social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='./templates/images/social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='./templates/images/social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='./templates/images/footer_tagline_red_2x.png'}}
+	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG=''}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
+	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
+	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
+	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
+	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
+	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TITLE_IMG='./templates/images/header_title_white_2x.png'}}
-	{{$THEME_LOGO_IMG='./templates/images/header_logo_white_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='./templates/images/social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='./templates/images/social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='./templates/images/social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='./templates/images/social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='./templates/images/social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='./templates/images/footer_tagline_white_2x.png'}}
+	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037859-header_title_white_2x.png
+'}}
+	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
+	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
+	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
+	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
+	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
+	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270573-footer_tagline_white_2x.png'}}
 {{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" style="background: white; font-family: OgilvySans,Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
@@ -212,7 +213,7 @@
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none;">
-												<img src="{{$global->HERO->IMAGE}}" alt="{{$global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
+												<img src="{{$global->HERO->IMAGE}}" alt="{1global->HERO->TITLE}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 									</tr>
