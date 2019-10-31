@@ -13,7 +13,29 @@
 	{{$THEME_BACKGROUND_COLOR = '#ffffff'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
 	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG=''}}
+	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
+	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
+	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
+	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
+	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
+	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
+{{elseif $global->THEME=='PINK'}}
+	{{$THEME_BACKGROUND_COLOR = '#f5bac5'}}
+	{{$THEME_TXT_COLOR = '#eb3f43'}}
+	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
+	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
+	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
+	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
+	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
+	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
+{{elseif $global->THEME=='GREEN'}}
+	{{$THEME_BACKGROUND_COLOR = '#d6d972'}}
+	{{$THEME_TXT_COLOR = '#eb3f43'}}
+	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
 	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
 	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
 	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
@@ -358,11 +380,11 @@
 							<td class="email-container-inner" style="margin: 0; vertical-align: top;">
 								<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
-										<th class="footer-item-container" align="left" width="201">
+									{{*if $global->ENABLE_FOOTER_TAGLINE_IMAGE == 'TRUE'}}<th class="footer-item-container" align="left" width="201">
 											<a href="###" target="_blank" style="text-decoration: none;">
 												<img class="footer-tagline footer-alt-txt" src="{{$THEME_TAGLINE_IMG}}" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 204px; height: 48px; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
-										</th>
+										</th>{{/if*}}
 										<th class="footer-item-container" valign="middle">
 											<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 												<tr>
