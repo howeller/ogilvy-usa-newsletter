@@ -18,5 +18,16 @@ if( strpos( $_SERVER['SERVER_NAME'], 'ogilvy-digital.com' ) === false ) {
   $config->server = false;
 }
 
+$config->ga = '
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174201828-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag(\'js\', new Date());
+
+		gtag(\'config\', \'UA-174201828-1\');
+	</script>';
+
 $GLOBALS['config'] = $config;
 ?>

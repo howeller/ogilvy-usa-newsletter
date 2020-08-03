@@ -84,6 +84,7 @@ $version = str_replace( ' ', '_', $data->global->VERSION ); // for export action
 
 switch( $action ) {
   case 'html':
+  	$emailCode = str_replace( '</head>', $config->ga.'</head>', $emailCode );
     print $emailCode;
     break;
   
@@ -94,7 +95,8 @@ switch( $action ) {
     break;
   
   case 'export':
-    showHeader( 'download', $config->downloadPrefix.str_replace( ' ', '_', $version ).'.html' );
+  	$fileName = str_replace( ',', '_', $config->downloadPrefix.str_replace( ' ', '_', $version ).'.html' );
+    showHeader( 'download', $fileName );
     print $emailCode;
     break;
   
