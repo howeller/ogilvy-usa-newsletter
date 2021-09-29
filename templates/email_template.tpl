@@ -3,7 +3,7 @@
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
 	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
 	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270617-social_facebook_blue_2x.pnggulp'}}
+	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270617-social_facebook_blue_2x.png'}}
 	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037853-social_instagram_blue_2x.png'}}
 	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270592-social_linkedin_blue_2x.png'}}
 	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037784-social_twitter_blue_2x.png'}}
