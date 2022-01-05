@@ -1,0 +1,115 @@
+		* {
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust: none!important;
+		}
+		/*Keep iphone telephone numbers from turning blue*/
+		*[x-apple-data-detectors], .x-gmail-data-detectors, .x-gmail-data-detectors *, .aBn {
+			color: inherit!important;
+			text-decoration: none!important;
+			font-size: inherit!important;
+			font-family: 'proxima-nova', inherit!important;
+			font-weight: inherit!important;
+			line-height: inherit!important;
+		}
+		.ExternalClass * {
+			line-height: 100% !important;
+		}
+		/* What it does:Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		/* What it does:Stops Outlook from adding extra spacing to tables. */
+		table, td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+		a {text-decoration: none;}
+
+		@media screen {
+			@font-face {
+				font-family: 'OgilvySans';
+				font-weight: normal;
+				font-style: normal;
+				src: 
+					local(Ogilvy Sans),
+					url('https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Regular.eot');
+				src:
+					local(Ogilvy Sans),
+					url('https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Regular.eot?#iefix') format('embedded-opentype'),
+					url(https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Regular.woff2) format("woff2"),
+					url(https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Regular.woff) format("woff"),
+					url(https://assets.ogilvy.com/ogassets/font/OTF/OgilvySans-Regular.otf) format("opentype");
+				mso-font-alt: Arial;
+			}
+			@font-face {
+				font-family: 'OgilvySans';
+				font-weight: bold;
+				font-style: normal;
+				src: 
+					local(Ogilvy Sans Bold),
+					url('https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Bold.eot');
+				src:
+					local(Ogilvy Sans Bold),
+					url('https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+					url(https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Bold.woff2) format("woff2"),
+					url(https://assets.ogilvy.com/ogassets/font/OgilvySansWeb-Bold.woff) format("woff"),
+					url(https://assets.ogilvy.com/ogassets/font/OTF/OgilvySans-Bold.otf) format("opentype");
+				mso-font-alt: Arial;
+			}
+		}
+
+		@media screen yahoo {
+			* {
+				overflow: visible!important
+			}
+			.y-overflow-hidden {
+				overflow: hidden!important
+			}
+		}
+
+		@media screen and (max-width:600px) {
+			.email-container, .body-container, .fullbleed-container{
+				width: 100% !important;
+				max-width: 100% !important;
+				margin: auto !important;
+			}
+			.email-container-inner{
+				padding: 0 13px 0 13px !important;
+			}
+			.mod-card-wrapper,th.footer-item-container{
+				display: block !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+			.mod-img{
+				width: 100%;
+				max-width: 400px !important;
+			}
+			th.footer-item-container, .footer-txt{
+				text-align: left !important;
+				float: middle !important;
+				padding-bottom: 20px !important;
+			}
+		}
+		/* Smaller screens */
+		@media screen and (max-width:500px) {
+			.mod-img, .mod-img-wrapper, .mod-card-wrapper{
+				display:block !important;
+				width: 100% !important;
+				max-width: 100% !important;
+				height: auto!important;
+				float: none!important;
+				clear: both!important;
+			}
+			/*.footer-column {
+				text-align: center !important;
+				float: middle !important;
+			}*/
+			img.social-btn{ padding-bottom: 20px !important }
+			.mod-gap{	font-size:10px !important; line-height:10px !important }
+			.social-gap{width: 5px !important;}
+			.card-title,.card-subtitle,*.body-text{
+				display:block !important;
+			}
+		}

@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-Regular.eot'); 
+	src: 	url('OgilvySerifWeb-Regular.woff2') format('woff2'),
+				url('OgilvySerifWeb-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-Bold.eot'); 
+	src: 	url('OgilvySerifWeb-Bold.woff2') format('woff2'),
+				url('OgilvySerifWeb-Bold.woff') format('woff');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-Italic_source.eot'); 
+	src: 	url('OgilvySerifWeb-Italic_source.woff2') format('woff2'),
+				url('OgilvySerifWeb-Italic_source.woff') format('woff');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-Light.eot'); 
+	src: 	url('OgilvySerifWeb-Light.woff2') format('woff2'),
+				url('OgilvySerifWeb-Light.woff') format('woff');
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-LightItalic.eot'); 
+	src: 	url('OgilvySerifWeb-LightItalic.woff2') format('woff2'),
+				url('OgilvySerifWeb-LightItalic.woff') format('woff');
+	font-style: italic;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-BoldItalic.eot'); 
+	src: 	url('OgilvySerifWeb-BoldItalic.woff2') format('woff2'),
+				url('OgilvySerifWeb-BoldItalic.woff') format('woff');
+	font-style: italic;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'OgilvySerif';
+	src: 	url('OgilvySerifWeb-RegularItalic.eot'); 
+	src: 	url('OgilvySerifWeb-RegularItalic.woff2') format('woff2'),
+				url('OgilvySerifWeb-RegularItalic.woff') format('woff');
+	font-style: italic;
+}

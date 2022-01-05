@@ -1,0 +1,35 @@
+/* 
+	Error Message Overlay
+*/
+div.error-wrapper{
+	background-color: #24298f;/* Ogilvy Blue */
+	/*background-color: #545659;*//* Ogilvy Gray */
+	border: 5px solid #eb3f43;/* Ogilvy Red */
+	border-radius: 15px;
+	color: #eb3f43;/* Ogilvy Red */
+	display: block;
+	font-family: OgilvySans,Arial, sans-serif;
+	font-weight: bold;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	max-width: 760px;
+}
+div.error-wrapper h1{
+	position: relative;
+	display:inline-block;
+	font-size: 20px;
+	line-height: 23px;
+	padding-left: 25px;
+}
+img.error-logo{
+	width:100px;
+	max-width:100px;
+	height: auto;
+	max-height: 73px;
+	display:inline-block;
+	padding: 15px;
+	float: right;
+}

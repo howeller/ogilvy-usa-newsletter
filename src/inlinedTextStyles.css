@@ -1,0 +1,98 @@
+/*
+	Outlook doesn't like padding on paragraph, div or anchor tags.
+*/
+
+img.header-alt-txt, img.footer-alt-txt{
+	font-family:OgilvySans,Arial,sans-serif;
+	font-size:13px;
+	font-style:normal;
+	text-decoration:none;
+	text-align: center;
+}
+/* Hero Section */
+img.hero-alt-txt{
+	font-family:OgilvySans,Arial,sans-serif;
+	/*color: #ffffff;*/
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	word-wrap: normal;
+}
+
+.hero-h1, .hero-h1 a{
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	line-height:26px;
+	padding:0;
+}
+.hero-body-txt{
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:normal;
+	font-size:15px;
+	line-height:18px;
+	padding-top: 10px;
+}
+.body-text,.body-text-bold{
+	color:#545659;
+	font-family:OgilvySans,Arial,sans-serif;
+	font-size:13px;
+	line-height:17px;
+}
+.body-text{
+	font-weight:normal;
+}
+.body-text-bold{
+	font-weight: bold;
+}
+
+/* Recap Links Section */
+
+td.mod-recap-title{
+	color:#eb3f43;
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:bold;
+	font-size:15px;
+	line-height:18px;
+	padding-bottom: 5px;
+}
+.mod-recap-body-txt, .mod-recap-body-txt a{
+	color:#000000;
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:normal;
+	font-size:13px;
+	line-height:15px;
+}
+td.mod-recap-body-txt{
+	padding-top: 10px;
+}
+img.mod-img-alt-txt{
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:normal;
+	font-size:20px;
+	line-height:22px;
+	text-align: center;
+}
+
+/* Colored Footer */
+
+.footer-txt{
+	/*color:#ffffff;*/
+	font-family:OgilvySans,Arial,sans-serif;
+	font-weight:normal;
+	font-size:13px;
+	line-height:15px;
+	text-align: right;
+}
+
+img.social-alt-txt{
+	color:#eb3f43;
+	font-family:OgilvySans,Arial,sans-serif;
+	font-size:8px;
+	font-style:normal;
+	text-decoration:none;
+	text-align: center;
+}
+/*a.red-text{
+	color: #eb3f43;
+}*/
