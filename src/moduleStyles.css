@@ -1,5 +1,5 @@
 /* 
-	Card Module 
+	Card Modules
 */
 .mod-card-container {
 	display: inline-block;
@@ -13,6 +13,13 @@
 }
 .mod-img-container {
 	padding-bottom: 10px;
+}
+
+.mod-full-card-wrapper, .mod-img-wrapper {
+	width: 100%;
+	height:auto;
+	/*max-height: 500px;*/
+	max-width: 580px;
 }
 
 /* Card Module title */

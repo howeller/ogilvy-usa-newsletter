@@ -36,6 +36,19 @@ img.hero-alt-txt{
 	padding-top: 10px;
 }
 
+.section-title-text {
+	color: #000000;
+	font-family: OgilvySans, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 28px;
+	text-align: left;
+	padding: 35px 0px 22px;
+}
+.section-title-text span {
+ color: #A6A6A8;
+}
+
 .body-text, .body-text-bold, .cta-text {
 	font-family: OgilvySans, Arial, sans-serif;
 	font-size: 16px;

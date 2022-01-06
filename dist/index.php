@@ -97,10 +97,10 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
   }
 }
 
+/* COUNT ALL MODULES IN ALL SECTIONS AND IF 0 THROW ERROR HERE  
 if( empty( $bodyModules ) ) {
   $data->errors[] = 'No BODY (card) modules defined';
-}
-/* ADD MORE ERROR CHECKS HERE ? */
+}*/
 
 $data->body = array_chunk( $bodyModules, 2 );
 $data->capabilities = array_chunk( $capabilitiesModules, 2 );

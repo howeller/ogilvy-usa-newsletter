@@ -87,10 +87,10 @@
 			}
 			/*th.mod-exec-container {
 				padding: 0 13px !important;
-			}
-			th.mod-exec-img {
-				padding: 0 13px 15px!important;
 			}*/
+			th.mod-exec-img {
+				padding-bottom: 25px!important;
+			}
 			.mod-img, .mod-exec-img {
 				width: 100%;
 				max-width: 400px !important;

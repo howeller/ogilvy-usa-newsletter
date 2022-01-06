@@ -141,10 +141,10 @@
 			}
 			/*th.mod-exec-container {
 				padding: 0 13px !important;
-			}
-			th.mod-exec-img {
-				padding: 0 13px 15px!important;
 			}*/
+			th.mod-exec-img {
+				padding-bottom: 25px!important;
+			}
 			.mod-img, .mod-exec-img {
 				width: 100%;
 				max-width: 400px !important;
@@ -255,12 +255,18 @@
 		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
 		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 606px; max-width: 606px; margin: auto; font-size: 0px;">
-			<tr>
-				<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="section-title-text" style="margin: 0;">
-					OUR {{$}}
+			{{if !empty($creativity)}}<tr>
+				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+						</tr>
+						<tr>
+							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
+								<span style="color: #A6A6A8;">OUR</span> CREATIVITY
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 			{{*assign var=moduleCount value=0*}}
@@ -283,16 +289,35 @@
 			</tr>
 			{{else}}
 			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;"><!-- CHANGE file=$modulePair to harcoded new full width module -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
 				</td>
 			</tr>
 			{{/if}}
 			<!-- CREATIVITY CARD ROW : End -->
 			{{/foreach}}
+			<tr>
+				<td class="gap30" style="margin: 0; font-size: 30px; line-height: 30px; mso-line-height-rule: exactly;">&nbsp;</td>
+			</tr>
+			{{/if}}
+			
+			{{if !empty($clients)}}<tr>
+				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+						</tr>
+						<tr>
+							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
+								<span style="color: #A6A6A8;">OUR</span> CLIENTS
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
 			{{*assign var=moduleCount value=0*}}
-			{{foreach $body as $modulePair}}
-			<!-- CARD ROW : Start -->
+			{{foreach $clients as $modulePair}}
+			<!-- CLIENTS CARD ROW : Start -->
 				{{if count($modulePair) == 2}}
 			<tr>
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
@@ -311,12 +336,159 @@
 			{{else}}
 			<tr>
 				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
 				</td>
 			</tr>
 			{{/if}}
-			<!-- CARD ROW : End -->
+			<!-- CLIENTS CARD ROW : End -->
 			{{/foreach}}
+			<tr>
+				<td class="gap30" style="margin: 0; font-size: 30px; line-height: 30px; mso-line-height-rule: exactly;">&nbsp;</td>
+			</tr>
+			{{/if}}
+
+			
+			{{if !empty($capabilities)}}<tr>
+				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+						</tr>
+						<tr>
+							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
+								<span style="color: #A6A6A8;">OUR</span> CAPABILITIES
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			{{*assign var=moduleCount value=0*}}
+			{{foreach $capabilities as $modulePair}}
+			<!-- CAPABILITIES CARD ROW : Start -->
+				{{if count($modulePair) == 2}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{* Begin Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
+					<!-- Card Module Left: Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}<!-- Card Module Left: End -->
+					{{* Divider for module pairs *}}
+					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
+					<!-- Card Module Right : Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
+					{{* End Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+				</td>
+			</tr>
+			{{else}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
+				</td>
+			</tr>
+			{{/if}}
+			<!-- CAPABILITIES CARD ROW : End -->
+			{{/foreach}}
+			<tr>
+				<td class="gap30" style="margin: 0; font-size: 30px; line-height: 30px; mso-line-height-rule: exactly;">&nbsp;</td>
+			</tr>
+			{{/if}}
+
+			
+			{{if !empty($community)}}<tr>
+				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+						</tr>
+						<tr>
+							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
+								<span style="color: #A6A6A8;">OUR</span> COMMUNITY
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			{{*assign var=moduleCount value=0*}}
+			{{foreach $community as $modulePair}}
+			<!-- COMMUNITY CARD ROW : Start -->
+				{{if count($modulePair) == 2}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{* Begin Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
+					<!-- Card Module Left: Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}<!-- Card Module Left: End -->
+					{{* Divider for module pairs *}}
+					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
+					<!-- Card Module Right : Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
+					{{* End Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+				</td>
+			</tr>
+			{{else}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
+				</td>
+			</tr>
+			{{/if}}
+			<!-- COMMUNITY CARD ROW : End -->
+			{{/foreach}}
+			<tr>
+				<td class="gap30" style="margin: 0; font-size: 30px; line-height: 30px; mso-line-height-rule: exactly;">&nbsp;</td>
+			</tr>
+			{{/if}}
+
+			
+			{{if !empty($careers)}}<tr>
+				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+						</tr>
+						<tr>
+							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
+								<span style="color: #A6A6A8;">OUR</span> CAREERS
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			{{*assign var=moduleCount value=0*}}
+			{{foreach $careers as $modulePair}}
+			<!-- CAREERS CARD ROW : Start -->
+				{{if count($modulePair) == 2}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{* Begin Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
+					<!-- Card Module Left: Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}<!-- Card Module Left: End -->
+					{{* Divider for module pairs *}}
+					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
+					<!-- Card Module Right : Start -->
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}<!-- Card Module Right : End -->
+					{{* End Module pair wrapper *}}
+					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+				</td>
+			</tr>
+			{{else}}
+			<tr>
+				<td class="body-container-inner" align="center" valign="top" width="100%" style="margin: 0; vertical-align: top;">
+					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
+				</td>
+			</tr>
+			{{/if}}
+			<!-- CAREERS CARD ROW : End -->
+			{{/foreach}}
+			<tr>
+				<td class="gap30" style="margin: 0; font-size: 30px; line-height: 30px; mso-line-height-rule: exactly;">&nbsp;</td>
+			</tr>
+			{{/if}}
+
+
 			{{*<!-- Prefooter : Start -->
 			<tr>
 				<td align="center">
