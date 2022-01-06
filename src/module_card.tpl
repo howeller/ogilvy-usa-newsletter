@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="moduleStyles.css"><link rel="stylesheet" type="text/css" href="inlinedStyles.css"><link rel="stylesheet" type="text/css" href="inlinedTextStyles.css"><!-- Card Module {{$moduleCount}} : Start -->
+<link rel="stylesheet" type="text/css" href="moduleStyles.css"><link rel="stylesheet" type="text/css" href="inlinedStyles.css"><link rel="stylesheet" type="text/css" href="inlinedTextStyles.css"><!-- Card Module {{*$moduleCount*}} : Start -->
 				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
 					<tr>
 						<td class="mod-card-container-inner" align="center" valign="top">
@@ -19,13 +19,8 @@
 												</td>
 											</tr>
 											<tr>
-												<td class="card-subtitle" align="left" valign="top">
-													<a href="{{$module->LINKURL}}" target="_blank">{{$module->SUBTITLE}}</a>
-												</td>
-											</tr>
-											<tr>
 												<td class="body-text">
-													{{$module->BODYCOPY}}
+													{{$module->BODYCOPY}} <a href="{{$module->LINKURL}}" target="_blank" class="cta-text"><span class="cta-text">→&nbsp;Read&nbsp;more</span></a>
 												</td>
 											</tr>
 										</table>
@@ -35,4 +30,4 @@
 						</td>
 					</tr>
 				</table>
-				<!-- Card Module {{$moduleCount}} : End -->
+				<!-- Card Module {{*$moduleCount*}} : End -->

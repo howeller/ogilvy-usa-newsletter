@@ -25,7 +25,19 @@ $data->errors = [];
 $data->global = new stdClass();
 $data->body = [];
 $data->bottom = [];
+$data->capabilities = [];
+$data->careers = [];
+$data->clients = [];
+$data->community = [];
+$data->creativity = [];
+
 $bodyModules = [];
+$capabilitiesModules = [];
+$careersModules = [];
+$clientsModules = [];
+$communityModules = [];
+$creativityModules = [];
+
 
 foreach( $sheet->getRowData() as $rowIndex => $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
@@ -52,11 +64,30 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
     case 'BODY':
       $bodyModules[] = makeModule( $row );
       break;
-    
+
     case 'BOTTOM':
       $data->bottom[] = makeModule( $row );
       break;
+
+    case 'CAPABILITIES':
+      $capabilitiesModules[] = makeModule( $row );
+      break;
+
+    case 'CAREERS':
+      $careersModules[] = makeModule( $row );
+      break;
+
+    case 'CLIENTS':
+      $clientsModules[] = makeModule( $row );
+      break;
+
+    case 'COMMUNITY':
+      $communityModules[] = makeModule( $row );
+      break;
     
+    case 'CREATIVITY': 
+      $creativityModules[] = makeModule( $row );
+
     case '':
       break;
     
@@ -69,8 +100,14 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
 if( empty( $bodyModules ) ) {
   $data->errors[] = 'No BODY (card) modules defined';
 }
+/* ADD MORE ERROR CHECKS HERE ? */
 
 $data->body = array_chunk( $bodyModules, 2 );
+$data->capabilities = array_chunk( $capabilitiesModules, 2 );
+$data->careers = array_chunk( $careersModules, 2 );
+$data->clients = array_chunk( $clientsModules, 2 );
+$data->community = array_chunk( $communityModules, 2 );
+$data->creativity = array_chunk( $creativityModules, 2 );
 
 if( $action == 'debug' ) {
   showHeader( 'text' );
