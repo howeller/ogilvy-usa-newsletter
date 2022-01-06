@@ -2,7 +2,8 @@
 $config = new stdClass();
 
 $config->key = 'z8nbucmcqkbgrl67bc0svpm6q';
-$config->contentSheetId = '4529001457837956';
+$config->contentSheetId = '3938413045933956';
+// $config->contentSheetId = '4529001457837956';
 $config->emailSheetID = '7500895488370564';
 
 $config->mainTemplate = 'templates/email_template.tpl';

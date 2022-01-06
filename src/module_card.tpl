@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="moduleStyles.css"><link rel="stylesheet" type="text/css" href="inlinedStyles.css"><link rel="stylesheet" type="text/css" href="inlinedTextStyles.css"><!-- Card Module {{$moduleCount}} : Start -->
-				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0">
+				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
 					<tr>
 						<td class="mod-card-container-inner" align="center" valign="top">
 							<table class="mod-card-wrapper" border="0" cellpadding="0" cellspacing="0">

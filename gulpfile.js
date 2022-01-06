@@ -1,5 +1,6 @@
 // Node & NPM packages
-const merge = require('merge-stream'),
+const del = require('del'),
+	merge = require('merge-stream'),
 	gulp = require('gulp'),
 	emailBuilder = require('gulp-email-builder-min');
 
@@ -9,26 +10,28 @@ const inlinerOptions = {encodeSpecialChars: true, juice: {preserveImportant: tru
 const	builder = emailBuilder(inlinerOptions); // Path to Sanjays repo
 
 const dir = {
-	src: 'src',
-	test: 'test/', // Path for Static HTML
+	src: 'src/',
+	test: 'src/test/', // Path for Static HTML
 	dist: 'dist/templates/',
-	repo: 'ogilvy-usa-newsletter repo/templates/' // Path to Sanjays repo
+	previewCache:'dist/templates_c/'
 }
 
-function buildEmail(isTest=false, images=false) {
+function buildEmail(isTest=false) {
 
 	if (isTest) {
 		// For testing static HTML template
-		let _html = gulp.src(dir.src+'/*.html')
+		let _html = gulp.src(dir.src+'Static_Template.html')
 			.pipe(builder.build());
 
-		let _images = gulp.src(dir.src+'/images/*',{base:dir.src})// pipe "images" and contents
+		let _images = gulp.src(dir.src+'images/*',{base:dir.src})// pipe "images" and contents
 			
 		return merge(_html, _images)
 			.pipe(gulp.dest(dir.test));
 
 	} else {
-		return gulp.src(dir.src+'/*.tpl')
+		let _clearCache = del(dir.previewCache+'**');
+
+		return gulp.src(dir.src+'*.tpl')
 		.pipe(builder.build())
 		.pipe(gulp.dest(dir.dist));
 	}
@@ -38,4 +41,4 @@ function buildEmail(isTest=false, images=false) {
 gulp.task('build:email', () => { return buildEmail(false)}); // inline's CSS
 gulp.task('build:test', () => { return buildEmail(true)}); // Builds static HTML + copies images
 gulp.task('default', gulp.series('build:email'));
-gulp.task('watch', () => { return gulp.watch(dir.src+'/**/**', gulp.series('default')) });
+gulp.task('watch', () => { return gulp.watch(dir.src+'**/**', gulp.series('default')) });

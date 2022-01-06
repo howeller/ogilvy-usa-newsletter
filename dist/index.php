@@ -35,6 +35,10 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
         case 'HERO':
           $data->global->$name = makeModule( $row );
           break;
+
+        case 'EXECUTIVE':
+          $data->global->$name = makeModule( $row );
+          break;
         
         case 'THEME':
           $data->global->$name = strtoupper( $row['TITLE'] );

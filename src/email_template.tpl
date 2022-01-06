@@ -1,59 +1,34 @@
-{{if $global->THEME=='BLUE'}}
-	{{$THEME_BACKGROUND_COLOR = '#24298f'}}
+{{$COLOR_OFF_WHITE = '#F0F0F0'}}
+{{if $global->THEME=='BLACK'}}
+	{{$THEME_BACKGROUND_COLOR = '#000000'}}
+	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_black_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+{{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
+	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
+	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
+	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+{{elseif $global->THEME=='DARK ROSE'}}
+	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
+	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+{{elseif $global->THEME=='LIGHT ROSE'}}
+	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270617-social_facebook_blue_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037853-social_instagram_blue_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270592-social_linkedin_blue_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037784-social_twitter_blue_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037802-social_youtube_blue_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='WHITE'}}
-	{{$THEME_BACKGROUND_COLOR = '#ffffff'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='PINK'}}
-	{{$THEME_BACKGROUND_COLOR = '#f5bac5'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='GREEN'}}
-	{{$THEME_BACKGROUND_COLOR = '#d6d972'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037859-header_title_white_2x.png
-'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270573-footer_tagline_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
 {{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
@@ -83,16 +58,21 @@
 	<div class="hide">{{$global->HEADER_PREHEADER_TEXT}}</div>
 		<center>
 		<!-- Email Header : BEGIN -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%">
+		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="main">
 			<tr>
 				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
-							<td class="gap20">&nbsp;</td>
+							<td>
+								<img src="{{$THEME_TARTAN_IMG}}" alt="" class="tartan8">
+							</td>
+						</tr>
+						<tr>
+							<td class="gap40">&nbsp;</td>
 						</tr>
 						<tr>
 							<td class="email-container-inner">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
 									<tr>
 										<td align="left">
 											<a href="{{$global->HEADER_LINK}}" target="_blank">
@@ -109,13 +89,13 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="gap20">&nbsp;</td>
+							<td class="gap40">&nbsp;</td>
 						</tr>
 						<!-- Hero : Start -->
 						{{if isset($global->HERO->IMAGE)}}<tr>
 							<td align="center">
 								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
-								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0">
+								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" role="presentation">
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank">
@@ -132,7 +112,7 @@
 						</tr>{{/if}}
 						{{if isset($global->HERO->TITLE)}}<tr>
 							<td class="email-container-inner" align="left" valign="top">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
 									<tr>
 										<td class="hero-h1" style="color:{{$THEME_TXT_COLOR}};">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="color:{{$THEME_TXT_COLOR}};">{{$global->HERO->TITLE}}</a>
@@ -153,8 +133,9 @@
 			</tr>
 		</table>
 		<!-- Email Header : End -->
+		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
-		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0">
+		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 			<tr>
 				<td class="gap20">&nbsp;</td>
 			</tr>
@@ -188,7 +169,7 @@
 			<!-- Prefooter : Start -->
 			<tr>
 				<td align="center">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
 							<td class="email-container-inner" align="left" valign="top">
 								<!-- Links Section : Start  -->
@@ -206,75 +187,42 @@
 						<tr>
 							<td class="gap40">&nbsp;</td>
 						</tr>
-						<tr>
-							<td align="center">
-								<table class="social-container" border="0" cellpadding="0" cellspacing="0">
-									<tr>
-										<td class="social-btn" width="47">
-											<a href="https://www.facebook.com/ogilvy" target="_blank">
-												<img src="{{$THEME_FACEBOOK_IMG}}" alt="facebook" class="social-btn social-alt-txt" border="0" width="47" />
-											</a>
-										</td>
-										<td class="social-gap" width="8">&nbsp;</td>
-										<td class="social-btn" width="47">
-											<a href="https://twitter.com/Ogilvy" target="_blank">
-												<img src="{{$THEME_TWITTER_IMG}}" alt="twitter" class="social-btn social-alt-txt" border="0" width="47" />
-											</a>
-										</td>
-										<td class="social-gap" width="8">&nbsp;</td>
-										<td class="social-btn" width="47">
-											<a href="https://instagram.com/ogilvy/" target="_blank">
-												<img src="{{$THEME_INSTAGRAM_IMG}}" alt="instagram" class="social-btn social-alt-txt" border="0" width="47" />
-											</a>
-										</td>
-										<td class="social-gap" width="8">&nbsp;</td>
-										<td class="social-btn" width="47">
-											<a href="https://www.linkedin.com/company/ogilvy/" target="_blank">
-												<img src="{{$THEME_LINKEDIN_IMG}}" alt="linkedin" class="social-btn social-alt-txt" border="0" width="47" />
-											</a>
-										</td>
-										<td class="social-gap" width="8">&nbsp;</td>
-										<td class="social-btn" width="47">
-											<a href="https://www.youtube.com/user/Ogilvy/featured" target="_blank">
-												<img src="{{$THEME_YOUTUBE_IMG}}" alt="youtube" class="social-btn social-alt-txt" border="0" width="47" />
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40">&nbsp;</td>
-						</tr>
 					</table>
 				</td>
 			</tr>
 			<!-- Prefooter : End -->
 		</table>
 		<!-- Email Body : End -->
-		<!-- Red Footer : Start -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%">
+		<!-- Footer : Start -->
+		<table class="fullbleed-container" align="center" bgcolor="{{$COLOR_OFF_WHITE}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
 			<tr>
-				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0">
+				<td align="center" bgcolor="{{$COLOR_OFF_WHITE}}" valign="top">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
 							<td class="gap20">&nbsp;</td>
 						</tr>
 						<tr>
 							<td class="email-container-inner">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
 									<tr>
-									{{*if $global->ENABLE_FOOTER_TAGLINE_IMAGE == 'TRUE'}}<th class="footer-item-container" align="left" width="201">
-											<a href="###" target="_blank">
-												<img class="footer-tagline footer-alt-txt" src="{{$THEME_TAGLINE_IMG}}" alt="information THAT MATTERS" width="204" height="48" style="color:{{$THEME_TXT_COLOR}}"/>
-											</a>
-										</th>{{/if*}}
-										<th class="footer-item-container" valign="middle">
-											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<th class="footer-item-container" valign="top" align="left" role="presentation">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 												<tr>
-													<td class="footer-txt" valign="middle" style="color:{{$THEME_TXT_COLOR}}">
-														<b>Contributions. Questions, Feedback.</b><br/>
-														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="color:{{$THEME_TXT_COLOR}};"><span class="footer-txt"style="color:{{$THEME_TXT_COLOR}};">{{$global->FOOTER_LINK_TEXT}}</span></a>
+													<td class="footer-txt" valign="top">
+														Contributions, questions, feedback,<br/>
+														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank"><span class="footer-txt">{{$global->FOOTER_LINK_TEXT}}</span></a>
+													</td>
+												</tr>
+											</table>
+										</th>
+										<th class="footer-item-container" align="left" role="presentation">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation">
+												<tr>
+													<td class="social-txt" valign="top">
+														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank"><span class="social-txt">Facebook</span></a><br/>
+														<a href="https://twitter.com/Ogilvy" class="social-txt" target="_blank"><span class="social-txt">Twitter</span></a><br/>
+														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank"><span class="social-txt">instagram</span></a><br/>
+														<a href="https://www.linkedin.com/company/ogilvy/" class="social-txt" target="_blank"><span class="social-txt">LinkedIn</span></a><br/>
 													</td>
 												</tr>
 											</table>
@@ -286,10 +234,13 @@
 						<tr>
 							<td class="gap20">&nbsp;</td>
 						</tr>
+						<tr>
+							<td><img src="templates/images/tartan8_2x.png" alt="" class="tartan8" width="277" height="8"></td>
+						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<!-- Red Footer : End -->
+		<!-- Footer : End -->
 	</center>
 </body>

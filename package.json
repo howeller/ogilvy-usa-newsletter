@@ -16,12 +16,13 @@
   "author": "howeller",
   "license": "ISC",
   "devDependencies": {
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-email-builder-min": "^0.0.1",
     "merge-stream": "^2.0.0"
   },
-  "repository":{
-    "type":"git",
-    "url":"https://git.ogilvy-digital.com/projects/DXA/repos/ogilvy-usa-newsletter.git"
+  "repository": {
+    "type": "git",
+    "url": "https://git.ogilvy-digital.com/projects/DXA/repos/ogilvy-usa-newsletter.git"
   }
 }

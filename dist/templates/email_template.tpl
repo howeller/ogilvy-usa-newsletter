@@ -1,62 +1,37 @@
-{{if $global->THEME=='BLUE'}}
-	{{$THEME_BACKGROUND_COLOR = '#24298f'}}
+{{$COLOR_OFF_WHITE = '#F0F0F0'}}
+{{if $global->THEME=='BLACK'}}
+	{{$THEME_BACKGROUND_COLOR = '#000000'}}
+	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_black_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+{{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
+	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
+	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
+	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+{{elseif $global->THEME=='DARK ROSE'}}
+	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
+	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+{{elseif $global->THEME=='LIGHT ROSE'}}
+	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270617-social_facebook_blue_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037853-social_instagram_blue_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270592-social_linkedin_blue_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037784-social_twitter_blue_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037802-social_youtube_blue_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='WHITE'}}
-	{{$THEME_BACKGROUND_COLOR = '#ffffff'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='PINK'}}
-	{{$THEME_BACKGROUND_COLOR = '#f5bac5'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
-{{elseif $global->THEME=='GREEN'}}
-	{{$THEME_BACKGROUND_COLOR = '#d6d972'}}
-	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037877-header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037871-footer_tagline_red_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TITLE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037859-header_title_white_2x.png
-'}}
-	{{$THEME_LOGO_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
-	{{$THEME_FACEBOOK_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270586-social_facebook_red_2x.png'}}
-	{{$THEME_INSTAGRAM_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270605-social_instagram_red_2x.png'}}
-	{{$THEME_LINKEDIN_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037847-social_linkedin_red_2x.png'}}
-	{{$THEME_TWITTER_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270611-social_twitter_red_2x.png'}}
-	{{$THEME_YOUTUBE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037791-social_youtube_red_2x.png'}}
-	{{$THEME_TAGLINE_IMG='https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572270573-footer_tagline_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
+	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
 {{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" style="background: white; font-family: OgilvySans,Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
+<html lang="en" style="background: white; font-family: OgilvySans, Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -86,7 +61,7 @@
 			color: inherit!important;
 			text-decoration: none!important;
 			font-size: inherit!important;
-			font-family: 'proxima-nova', inherit!important;
+			font-family: 'OgilvySans', inherit!important;
 			font-weight: inherit!important;
 			line-height: inherit!important;
 		}
@@ -153,23 +128,32 @@
 				max-width: 100% !important;
 				margin: auto !important;
 			}
-			.email-container-inner{
+			.email-container-inner {
 				padding: 0 13px 0 13px !important;
 			}
-			.mod-card-wrapper,th.footer-item-container{
+			th, .mod-card-wrapper {
 				display: block !important;
 				width: 100% !important;
 				max-width: 100% !important;
 			}
-			.mod-img{
+			td.mod-padding-lr {
+ 				padding: 0 13px !important;
+			}
+			/*th.mod-exec-container {
+				padding: 0 13px !important;
+			}
+			th.mod-exec-img {
+				padding: 0 13px 15px!important;
+			}*/
+			.mod-img, .mod-exec-img {
 				width: 100%;
 				max-width: 400px !important;
 			}
-			th.footer-item-container, .footer-txt{
+			/*th.footer-item-container, .footer-txt{
 				text-align: left !important;
 				float: middle !important;
 				padding-bottom: 20px !important;
-			}
+			}*/
 		}
 		/* Smaller screens */
 		@media screen and (max-width:500px) {
@@ -181,43 +165,42 @@
 				float: none!important;
 				clear: both!important;
 			}
-			/*.footer-column {
-				text-align: center !important;
-				float: middle !important;
-			}*/
-			img.social-btn{ padding-bottom: 20px !important }
-			.mod-gap{	font-size:10px !important; line-height:10px !important }
-			.social-gap{width: 5px !important;}
-			.card-title,.card-subtitle,*.body-text{
+			
+			.card-title, *.body-text{
 				display:block !important;
 			}
 		}
 </style>
 </head>
 
-<body style="background: white; font-family: OgilvySans,Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
+<body style="background: white; font-family: OgilvySans, Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
 	<div class="hide" style="color: #ffffff; display: none; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">{{$global->HEADER_PREHEADER_TEXT}}</div>
 		<center style="width: 100%; background: white; text-align: center; vertical-align: top;">
 		<!-- Email Header : BEGIN -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; background-color: #eb3f43;">
+		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="main" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%;">
 			<tr>
 				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top" style="margin: 0;">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
-							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
+							<td style="margin: 0;">
+								<img src="{{$THEME_TARTAN_IMG}}" alt class="tartan8" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<tr>
 							<td class="email-container-inner" style="margin: 0; vertical-align: top;">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
 										<td align="left" style="margin: 0;">
 											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
-												<img class="header-title header-alt-txt" src="{{$THEME_TITLE_IMG}}" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 123px; height: 61px; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
+												<img class="header-title header-alt-txt" src="{{$THEME_TITLE_IMG}}" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 178px; height: 88px; font-family: OgilvySans, Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 										<td align="right" valign="middle" style="margin: 0;">
 											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
-												<img class="header-logo header-alt-txt" src="{{$THEME_LOGO_IMG}}" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 120px; height: 47px; vertical-align: middle; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
+												<img class="header-logo header-alt-txt" src="{{$THEME_LOGO_IMG}}" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 120px; height: 47px; vertical-align: middle; font-family: OgilvySans, Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 									</tr>
@@ -225,17 +208,17 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
+							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<!-- Hero : Start -->
 						{{if isset($global->HERO->IMAGE)}}<tr>
 							<td align="center" style="margin: 0;">
 								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
-								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
+								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none;">
-												<img src="{{$global->HERO->IMAGE}}" alt="{1global->HERO->TITLE}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans,Arial,sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
+												<img src="{{$global->HERO->IMAGE}}" alt="{1global->HERO->TITLE}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans, Arial, sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
 											</a>
 										</td>
 									</tr>
@@ -248,14 +231,14 @@
 						</tr>{{/if}}
 						{{if isset($global->HERO->TITLE)}}<tr>
 							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
-										<td class="hero-h1" style="margin: 0; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0; color: {{$THEME_TXT_COLOR}};">
-											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none; font-family: OgilvySans,Arial,sans-serif; font-weight: bold; font-size: 24px; line-height: 26px; padding: 0; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->TITLE}}</a>
+										<td class="hero-h1" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 40px; line-height: 38px; padding: 0; color: {{$THEME_TXT_COLOR}};">
+											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 40px; line-height: 38px; padding: 0; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->TITLE}}</a>
 										</td>
 									</tr>
 									<tr>
-										<td class="hero-body-txt" style="margin: 0; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 18px; padding-top: 10px; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
+										<td class="hero-body-txt" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 18px; padding-top: 10px; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
 									</tr>
 								</table>
 							</td>
@@ -269,8 +252,9 @@
 			</tr>
 		</table>
 		<!-- Email Header : End -->
+		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
-		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 606px; max-width: 606px; margin: auto; font-size: 0px;">
+		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 606px; max-width: 606px; margin: auto; font-size: 0px;">
 			<tr>
 				<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 			</tr>
@@ -304,7 +288,7 @@
 			<!-- Prefooter : Start -->
 			<tr>
 				<td align="center" style="margin: 0;">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
 							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
 								<!-- Links Section : Start  -->
@@ -322,75 +306,42 @@
 						<tr>
 							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
-						<tr>
-							<td align="center" style="margin: 0;">
-								<table class="social-container" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-									<tr>
-										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="https://www.facebook.com/ogilvy" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_FACEBOOK_IMG}}" alt="facebook" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
-											</a>
-										</td>
-										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
-										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="https://twitter.com/Ogilvy" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_TWITTER_IMG}}" alt="twitter" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
-											</a>
-										</td>
-										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
-										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="https://instagram.com/ogilvy/" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_INSTAGRAM_IMG}}" alt="instagram" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
-											</a>
-										</td>
-										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
-										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="https://www.linkedin.com/company/ogilvy/" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_LINKEDIN_IMG}}" alt="linkedin" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
-											</a>
-										</td>
-										<td class="social-gap" width="8" style="margin: 0; width: 8px;">&nbsp;</td>
-										<td class="social-btn" width="47" style="margin: 0; width: 47px;">
-											<a href="https://www.youtube.com/user/Ogilvy/featured" target="_blank" style="text-decoration: none;">
-												<img src="{{$THEME_YOUTUBE_IMG}}" alt="youtube" class="social-btn social-alt-txt" border="0" width="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 47px; height: 47px; color: #eb3f43; font-family: OgilvySans,Arial,sans-serif; font-size: 8px; font-style: normal; text-decoration: none; text-align: center;">
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
 					</table>
 				</td>
 			</tr>
 			<!-- Prefooter : End -->
 		</table>
 		<!-- Email Body : End -->
-		<!-- Red Footer : Start -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; background-color: #eb3f43;">
+		<!-- Footer : Start -->
+		<table class="fullbleed-container" align="center" bgcolor="{{$COLOR_OFF_WHITE}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%;">
 			<tr>
-				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top" style="margin: 0;">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
+				<td align="center" bgcolor="{{$COLOR_OFF_WHITE}}" valign="top" style="margin: 0;">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<tr>
 							<td class="email-container-inner" style="margin: 0; vertical-align: top;">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 									<tr>
-									{{*if $global->ENABLE_FOOTER_TAGLINE_IMAGE == 'TRUE'}}<th class="footer-item-container" align="left" width="201">
-											<a href="###" target="_blank" style="text-decoration: none;">
-												<img class="footer-tagline footer-alt-txt" src="{{$THEME_TAGLINE_IMG}}" alt="information THAT MATTERS" width="204" height="48" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 204px; height: 48px; font-family: OgilvySans,Arial,sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
-											</a>
-										</th>{{/if*}}
-										<th class="footer-item-container" valign="middle">
-											<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+										<th class="footer-item-container" valign="top" align="left" role="presentation">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
 												<tr>
-													<td class="footer-txt" valign="middle" style="margin: 0; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};">
-														<b>Contributions. Questions, Feedback.</b><br>
-														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};"><span class="footer-txt" style="font-family: OgilvySans,Arial,sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; text-align: right; color: {{$THEME_TXT_COLOR}};">{{$global->FOOTER_LINK_TEXT}}</span></a>
+													<td class="footer-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic; padding-right: 30px;">
+														Contributions, questions, feedback,<br>
+														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;"><span class="footer-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;">{{$global->FOOTER_LINK_TEXT}}</span></a>
+													</td>
+												</tr>
+											</table>
+										</th>
+										<th class="footer-item-container" align="left" role="presentation">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+												<tr>
+													<td class="social-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">
+														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">Facebook</span></a><br>
+														<a href="https://twitter.com/Ogilvy" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">Twitter</span></a><br>
+														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">instagram</span></a><br>
+														<a href="https://www.linkedin.com/company/ogilvy/" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">LinkedIn</span></a><br>
 													</td>
 												</tr>
 											</table>
@@ -402,10 +353,13 @@
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
+						<tr>
+							<td style="margin: 0;"><img src="templates/images/tartan8_2x.png" alt class="tartan8" width="277" height="8" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;"></td>
+						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<!-- Red Footer : End -->
+		<!-- Footer : End -->
 	</center>
 </body></html>

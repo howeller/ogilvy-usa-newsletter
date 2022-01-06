@@ -1,6 +1,6 @@
 <?php
 
 header( 'Content-type: text/plain' );
-print 'Version: 2020-08-03 #2'.PHP_EOL;
+print 'Version: 2022-01-07 #3'.PHP_EOL;
 
 ?>
