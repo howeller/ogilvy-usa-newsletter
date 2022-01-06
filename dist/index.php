@@ -23,15 +23,15 @@ try {
 $data = new stdClass();
 $data->errors = [];
 $data->global = new stdClass();
-$data->body = [];
-$data->bottom = [];
+// $data->body = [];
+// $data->bottom = [];
 $data->capabilities = [];
 $data->careers = [];
 $data->clients = [];
 $data->community = [];
 $data->creativity = [];
 
-$bodyModules = [];
+// $bodyModules = [];
 $capabilitiesModules = [];
 $careersModules = [];
 $clientsModules = [];
@@ -61,13 +61,13 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
       }
       break;
 
-    case 'BODY':
-      $bodyModules[] = makeModule( $row );
-      break;
+    // case 'BODY':
+    //   $bodyModules[] = makeModule( $row );
+    //   break;
 
-    case 'BOTTOM':
-      $data->bottom[] = makeModule( $row );
-      break;
+    // case 'BOTTOM':
+    //   $data->bottom[] = makeModule( $row );
+    //   break;
 
     case 'CAPABILITIES':
       $capabilitiesModules[] = makeModule( $row );
@@ -102,7 +102,7 @@ if( empty( $bodyModules ) ) {
   $data->errors[] = 'No BODY (card) modules defined';
 }*/
 
-$data->body = array_chunk( $bodyModules, 2 );
+// $data->body = array_chunk( $bodyModules, 2 );
 $data->capabilities = array_chunk( $capabilitiesModules, 2 );
 $data->careers = array_chunk( $careersModules, 2 );
 $data->clients = array_chunk( $clientsModules, 2 );
