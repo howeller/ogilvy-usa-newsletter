@@ -6,7 +6,7 @@ function makeModule( $row ) {
   $module = new stdClass();
   $module->NAME = $name;
   $module->TITLE = limitWidow( $row['TITLE'] );
-  $module->SUBTITLE = limitWidow( $row['SUBTITLE'] );
+  // $module->SUBTITLE = limitWidow( $row['SUBTITLE'] );
   $module->BODYCOPY = limitWidow( $row['BODY COPY'] );
   $module->IMAGE = $row['IMAGE'];
   $module->LINKURL = $row['LINK URL'];

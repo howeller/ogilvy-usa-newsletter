@@ -36,20 +36,37 @@ img.hero-alt-txt{
 	padding-top: 10px;
 }
 
-.body-text,.body-text-bold{
-	color: #545659;
+.section-title-text {
+	color: #000000;
 	font-family: OgilvySans, Arial, sans-serif;
-	font-size: 13px;
-	line-height: 17px;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 28px;
+	text-align: left;
+	padding: 35px 0px 22px;
 }
-.body-text{
+.section-title-text span {
+ color: #A6A6A8;
+}
+
+.body-text, .body-text-bold, .cta-text {
+	font-family: OgilvySans, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+.body-text {
+	color: #545659;
 	font-weight: normal;
 }
-.body-text-bold{
+.body-text-bold {
+	color: #545659;
 	font-weight: bold;
 }
 
-/* Recap Links Section */
+.cta-text {
+	color: #eb3f43;
+}
+/* Recap Links Section 
 
 td.mod-recap-title{
 	color: #eb3f43;
@@ -75,7 +92,9 @@ img.mod-img-alt-txt{
 	font-size: 20px;
 	line-height: 22px;
 	text-align: center;
-}
+}*/
+
+
 
 /* Footer */
 
