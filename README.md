@@ -3,7 +3,10 @@
 [Ogilvy Repo >>](https://git.ogilvy-digital.com/projects/DXA/repos/ogilvy-usa-newsletter/)
 
 [CMS Dashboard >>](https://app.smartsheet.com/dashboards/v4wGWrMXVrh622FmcCfGg898PCHVJWFC9vHHGhv1)
-<!-- [JIRA >>](https://hogarthdigital.atlassian.net/browse/CTUS-###) -->
+
+[Live Preview >>](https://dxa.ogilvy-digital.com/ogilvy-usa-newsletter/)
+
+[JIRA >>](https://hogarthdigital.atlassian.net/browse/CTUS-483)
 
 ---
 
