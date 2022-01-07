@@ -35,7 +35,7 @@ function getEmailAddresses( $config ) {
   return( implode( ',', $emails ) );
 }
 
-function sendMimeMail( $fromName, $fromEmail, $toEmail, $subject, $html ) {
+function OLDsendMimeMail( $fromName, $fromEmail, $toEmail, $subject, $html ) {
 	$boundary = uniqid('np');
 	
   $headers  = "MIME-Version: 1.0\n";
@@ -56,6 +56,45 @@ function sendMimeMail( $fromName, $fromEmail, $toEmail, $subject, $html ) {
     return( true );
   }
 }
+
+// New Mime sender using AWS 
+function sendMimeMail( $fromName, $fromEmail, $toEmail, $subject, $html ) {
+	$mail = new PHPMailer(true);
+
+	try {
+		//Server settings
+		$mail->SMTPDebug = SMTP::DEBUG_OFF;
+		$mail->isSMTP();
+		$mail->Host = 'email-smtp.us-east-1.amazonaws.com';
+		$mail->SMTPAuth = true;
+		$mail->Username = 'AKIATM4PRBCM4OAPKHGU';
+		$mail->Password = 'BGa98PxJeNYQf7lZKiFY7yAhKv090TrV3a94rDk6SiYb';
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+		$mail->Port = 587;
+
+		//Recipients
+		$mail->setFrom( $fromEmail, $fromName );
+		foreach( explode(',', $toEmail ) as $to ) {
+			$mail->addAddress( trim($to) );
+		}
+
+		// Content
+		$mail->CharSet = 'UTF-8';
+		$mail->Encoding = 'base64';
+		$mail->isHTML(true);
+		$mail->Subject = $subject;
+		$mail->Body = $html;
+		
+		$mail->send();
+		error_log( 'Message has been sent' );
+	} catch (Exception $e) {
+		error_log( "Message could not be sent. Mailer Error: {$mail->ErrorInfo}" );
+		return( false );
+	}
+	
+	return( true );
+}
+?>
 
 function limitWidow( $string ) {
   return( preg_replace( '/[ ]([^ ]+)$/', '&nbsp;$1', $string ) );
