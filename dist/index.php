@@ -26,11 +26,11 @@ $data->errors = [];
 $data->global = new stdClass();
 // $data->body = [];
 // $data->bottom = [];
-$data->capabilities = [];
-$data->careers = [];
-$data->clients = [];
-$data->community = [];
-$data->creativity = [];
+// $data->capabilities = [];
+// $data->careers = [];
+// $data->clients = [];
+// $data->community = [];
+// $data->creativity = [];
 
 // $bodyModules = [];
 $capabilitiesModules = [];
@@ -93,22 +93,47 @@ foreach( $sheet->getRowData() as $rowIndex => $row ) {
       break;
     
     default:
-      $data->errors[] = 'Unknown section '.$row['SECTION'].' in row '.($rowIndex+1);
+      // $data->errors[] = 'Unknown section '.$row['SECTION'].' in row '.($rowIndex+1);
       break;
   }
 }
 
-/* COUNT ALL MODULES IN ALL SECTIONS AND IF 0 THROW ERROR HERE  
-if( empty( $bodyModules ) ) {
+/* COUNT ALL MODULES IN ALL SECTIONS AND IF 0 THROW ERROR HERE  */
+$moduleCount = count($creativityModules) + count($capabilitiesModules) + count($careersModules) + count($clientsModules) + count($communityModules);
+
+if( empty( $moduleCount ) ) {
   $data->errors[] = 'No BODY (card) modules defined';
-}*/
+}
+
+$data->sections = [
+  'creativity' => [
+    '<span style="color:#a6a6a8;">OUR</span> CREATIVITY', 
+    array_chunk( $creativityModules, 2 )
+  ],
+  'clients' => [
+    '<span style="color:#a6a6a8;">OUR</span> CLIENTS',
+     array_chunk( $clientsModules, 2 )
+  ],
+  'capabilities' => [
+    '<span style="color:#a6a6a8;">OUR</span> CAPABILITIES',
+     array_chunk( $capabilitiesModules, 2 )
+  ],
+  'community' => [
+    '<span style="color:#a6a6a8;">OUR</span> COMMUNITY',
+     array_chunk( $communityModules, 2 )
+  ],
+  'careers' => [
+    '<span style="color:#a6a6a8;">OUR</span> CAREERS',
+     array_chunk( $careersModules, 2 )
+  ]
+];
 
 // $data->body = array_chunk( $bodyModules, 2 );
-$data->capabilities = array_chunk( $capabilitiesModules, 2 );
-$data->careers = array_chunk( $careersModules, 2 );
-$data->clients = array_chunk( $clientsModules, 2 );
-$data->community = array_chunk( $communityModules, 2 );
-$data->creativity = array_chunk( $creativityModules, 2 );
+// $data->capabilities = array_chunk( $capabilitiesModules, 2 );
+// $data->careers = array_chunk( $careersModules, 2 );
+// $data->clients = array_chunk( $clientsModules, 2 );
+// $data->community = array_chunk( $communityModules, 2 );
+// $data->creativity = array_chunk( $creativityModules, 2 );
 
 if( $action == 'debug' ) {
   showHeader( 'text' );

@@ -15,8 +15,8 @@
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
 	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
+	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
@@ -136,23 +136,28 @@
 		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
 		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-			{{if !empty($creativity)}}<tr>
+			
+			{{foreach $sections as $section_index => $section}}
+			{{assign var=sectionTitle value=$section[0]}}
+			{{assign var=mySection value=$section[1]}}
+
+			{{if !empty( $mySection )}}<tr>
 				<td class="section-title-container">
 					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"></td>
+							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"/></td>
 						</tr>
 						<tr>
 							<td class="section-title-text">
-								<span>OUR</span> CREATIVITY
+								{{$sectionTitle}}
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 			{{*assign var=moduleCount value=0*}}
-			{{foreach $creativity as $modulePair}}
-			<!-- CREATIVITY CARD ROW : Start -->
+			{{foreach $mySection as $modulePair}}
+			<!-- {{strtoupper($section_index)}} CARD ROW : Start -->
 			{{if count($modulePair) == 2}}
 			<tr>
 				<td class="body-container-inner" align="center" valign="top" width="100%">
@@ -177,200 +182,14 @@
 				</td>
 			</tr>
 			{{/if}}
-			<!-- CREATIVITY CARD ROW : End -->
+			<!-- {{strtoupper($section_index)}} CARD ROW : End -->
 			{{/foreach}}
 			<tr>
 				<td class="gap30">&nbsp;</td>
 			</tr>
 			{{/if}}
-			{{if !empty($clients)}}<tr>
-				<td class="section-title-container">
-					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"></td>
-						</tr>
-						<tr>
-							<td class="section-title-text">
-								<span>OUR</span> CLIENTS
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			{{*assign var=moduleCount value=0*}}
-			{{foreach $clients as $modulePair}}
-			<!-- CLIENTS CARD ROW : Start -->
-			{{if count($modulePair) == 2}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{* Begin Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<!-- Card Module Left: Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
-					<!-- Card Module Left: End -->
-					{{* Divider for module pairs *}}
-					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module Right : Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}
-					<!-- Card Module Right : End -->
-					{{* End Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			{{else}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
-				</td>
-			</tr>
-			{{/if}}
-			<!-- CLIENTS CARD ROW : End -->
 			{{/foreach}}
-			<tr>
-				<td class="gap30">&nbsp;</td>
-			</tr>
-			{{/if}}
-			{{if !empty($capabilities)}}<tr>
-				<td class="section-title-container">
-					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"></td>
-						</tr>
-						<tr>
-							<td class="section-title-text">
-								<span>OUR</span> CAPABILITIES
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			{{*assign var=moduleCount value=0*}}
-			{{foreach $capabilities as $modulePair}}
-			<!-- CAPABILITIES CARD ROW : Start -->
-			{{if count($modulePair) == 2}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{* Begin Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<!-- Card Module Left: Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
-					<!-- Card Module Left: End -->
-					{{* Divider for module pairs *}}
-					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module Right : Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}
-					<!-- Card Module Right : End -->
-					{{* End Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			{{else}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
-				</td>
-			</tr>
-			{{/if}}
-			<!-- CAPABILITIES CARD ROW : End -->
-			{{/foreach}}
-			<tr>
-				<td class="gap30">&nbsp;</td>
-			</tr>
-			{{/if}}
-			{{if !empty($community)}}<tr>
-				<td class="section-title-container">
-					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"></td>
-						</tr>
-						<tr>
-							<td class="section-title-text">
-								<span>OUR</span> COMMUNITY
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			{{*assign var=moduleCount value=0*}}
-			{{foreach $community as $modulePair}}
-			<!-- COMMUNITY CARD ROW : Start -->
-			{{if count($modulePair) == 2}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{* Begin Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<!-- Card Module Left: Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
-					<!-- Card Module Left: End -->
-					{{* Divider for module pairs *}}
-					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module Right : Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}
-					<!-- Card Module Right : End -->
-					{{* End Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			{{else}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
-				</td>
-			</tr>
-			{{/if}}
-			<!-- COMMUNITY CARD ROW : End -->
-			{{/foreach}}
-			<tr>
-				<td class="gap30">&nbsp;</td>
-			</tr>
-			{{/if}}
-			{{if !empty($careers)}}<tr>
-				<td class="section-title-container">
-					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
-						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"></td>
-						</tr>
-						<tr>
-							<td class="section-title-text">
-								<span>OUR</span> CAREERS
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			{{*assign var=moduleCount value=0*}}
-			{{foreach $careers as $modulePair}}
-			<!-- CAREERS CARD ROW : Start -->
-			{{if count($modulePair) == 2}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{* Begin Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]><table align="left" border="0" cellpadding="0" cellspacing="0"  style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-table;"><tr><td><![endif]-->
-					<!-- Card Module Left: Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file=$modulePair[0]->TEMPLATE}}
-					<!-- Card Module Left: End -->
-					{{* Divider for module pairs *}}
-					<!--[if (gte mso 9)|(IE)]></td><td><![endif]-->
-					<!-- Card Module Right : Start -->
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[1]}}{{include file=$modulePair[1]->TEMPLATE}}
-					<!-- Card Module Right : End -->
-					{{* End Module pair wrapper *}}
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			{{else}}
-			<tr>
-				<td class="body-container-inner" align="center" valign="top" width="100%">
-					{{*assign var=moduleCount value=$moduleCount+1*}}{{assign var=module value=$modulePair[0]}}{{include file='module_card_fullwidth.tpl'}}
-				</td>
-			</tr>
-			{{/if}}
-			<!-- CAREERS CARD ROW : End -->
-			{{/foreach}}
-			<tr>
-				<td class="gap30">&nbsp;</td>
-			</tr>
-			{{/if}}
+
 		</table>
 		<!-- Email Body : End -->
 		<!-- Footer : Start -->
