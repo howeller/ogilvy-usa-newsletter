@@ -99,7 +99,7 @@
 									<tr>
 										<td class="hero-img-wrapper" width="580" align="left" valign="top">
 											<a href="{{$global->HERO->LINKURL}}" target="_blank">
-												<img src="{{$global->HERO->IMAGE}}" alt="{{global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="color:{{$THEME_TXT_COLOR}};" />
+												<img src="{{$global->HERO->IMAGE}}" alt="{{$global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="color:{{$THEME_TXT_COLOR}};" />
 											</a>
 										</td>
 									</tr>
