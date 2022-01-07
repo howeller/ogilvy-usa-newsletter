@@ -1,5 +1,9 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 function makeModule( $row ) {
   $name = strtoupper( str_replace( ' ', '_', $row['NAME'] ) );
   
@@ -94,7 +98,6 @@ function sendMimeMail( $fromName, $fromEmail, $toEmail, $subject, $html ) {
 	
 	return( true );
 }
-?>
 
 function limitWidow( $string ) {
   return( preg_replace( '/[ ]([^ ]+)$/', '&nbsp;$1', $string ) );

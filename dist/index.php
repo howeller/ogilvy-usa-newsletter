@@ -1,21 +1,24 @@
 <?php
 
+require( 'vendor/autoload.php' );
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\SMTP;
+// use PHPMailer\PHPMailer\Exception;
+
 require( 'lib/dxa_smartsheet.inc' );
 require( 'lib/dxa_utility.inc' );
 require( 'lib/config.inc' );
 require( 'lib/functions.inc' );
-require( 'vendor/autoload.php' );
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
 $config = $GLOBALS['config'];
 
 $action = $_REQUEST['action'] ?? 'html';
+/*
 if( $action == 'email' && $config->server === false ) {
   showError( 'Cannot send preview email from local machine' );
   exit;
 }
+*/
 
 try {
   $sheet = new SS_Sheet( $config->key, $config->contentSheetId );
