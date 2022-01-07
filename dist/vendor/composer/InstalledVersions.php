@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'c8c4e11f422f79d09bca0640c0e0b40f846e2bdd',
+    'reference' => 'f11777ece5d0c4bf3522a178008b6c108391fa52',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'c8c4e11f422f79d09bca0640c0e0b40f846e2bdd',
+      'reference' => 'f11777ece5d0c4bf3522a178008b6c108391fa52',
     ),
     'phpmailer/phpmailer' => 
     array (
@@ -41,6 +41,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'baeb7cde6b60b1286912690ab0693c7789a31e71',
+    ),
+    'smarty/smarty' => 
+    array (
+      'pretty_version' => 'v3.1.33',
+      'version' => '3.1.33.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'dd55b23121e55a3b4f1af90a707a6c4e5969530f',
     ),
   ),
 );
