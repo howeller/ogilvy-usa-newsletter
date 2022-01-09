@@ -2,33 +2,33 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_black_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
-	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
-	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" style="background: white; font-family: OgilvySans, Arial, sans-serif; mso-line-height-rule: exactly; margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;">
@@ -37,16 +37,32 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
 	<meta name="x-apple-disable-message-reformatting">
 	<!--[if !mso]><!-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--<![endif]-->
-	<title>The Pulse : Ogilvy</title>
+	<title>The Pulse : Ogilvy {{$global->VERSION}}</title>
 	<!--[if (gte mso 9)|(IE)]>
-	<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+	<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
 	<![endif]-->
 	<!--[if gte mso 9]>
-	<style> .vml-p {margin:0;font-size:0;line-height:0;} v\:* {behavior:url(#default#VML);}</style>
+	<style> 
+		.vml-p {
+			margin:0;
+			font-size:0;
+			line-height:0;
+		} 
+		v\:* {
+			behavior:url(#default#VML);
+		}
+	</style>
 	<![endif]-->
 	<!-- styles will be inlined -->
 	
@@ -80,11 +96,6 @@
 		}
 		a {text-decoration: none;}
 
-		:root {
-			color-scheme: light dark;
-			supported-color-schemes: light dark;
-		}
-		
 		@media screen {
 			@font-face {
 				font-family: 'OgilvySans';
@@ -118,6 +129,34 @@
 			}
 		}
 
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+		@media (prefers-color-scheme: dark) {
+			/* Apply styles to clients that do not apply their own stlyes */
+
+			.header-bg{
+				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+			}
+			/* Try to override Outlook darkmode */
+
+    /*{{*data-ogsc (for &#8220;original style color&#8221;)
+    data-ogac (for &#8220;original attribute color&#8221;)
+    data-ogsb (for &#8220;original style background&#8221;)
+    data-ogab (for &#8220;original attribute background&#8221;)*}}*/
+
+			[data-ogsb] .header-bg {
+				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+			}
+			.hero-h1 * {
+				color: {{$THEME_TXT_COLOR}} !important;
+			}
+			[data-ogsc] .hero-h1 * {
+				color: {{$THEME_TXT_COLOR}} !important;
+			}
+		}
+
 		@media screen yahoo {
 			* {
 				overflow: visible!important
@@ -135,6 +174,10 @@
 			}
 			.email-container-inner {
 				padding: 0 13px 0 13px !important;
+			}
+			.hero-h1 * {
+				font-size: 28px !important;
+				line-height: 26px !important;
 			}
 			th, .mod-card-wrapper {
 				display: block !important;
@@ -182,94 +225,19 @@
 	<div class="hide" style="color: #ffffff; display: none; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">{{$global->HEADER_PREHEADER_TEXT}}</div>
 	<center style="width: 100%; background: white; text-align: center; vertical-align: top;">
 		<!-- Email Header : BEGIN -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="main" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%;">
-			<tr>
-				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top" style="margin: 0;">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
-						<tr>
-							<td style="margin: 0;">
-								<img src="{{$THEME_TARTAN_IMG}}" alt class="tartan8" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;">
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="email-container-inner" style="margin: 0; vertical-align: top;">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-									<tr>
-										<td align="left" style="margin: 0;">
-											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
-												<img class="header-title header-alt-txt" src="{{$THEME_TITLE_IMG}}" alt="The Pulse" width="123" height="61" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 178px; height: 88px; font-family: OgilvySans, Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
-											</a>
-										</td>
-										<td align="right" valign="middle" style="margin: 0;">
-											<a href="{{$global->HEADER_LINK}}" target="_blank" style="text-decoration: none;">
-												<img class="header-logo header-alt-txt" src="{{$THEME_LOGO_IMG}}" alt="Ogilvy" width="120" height="47" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; width: 120px; height: 47px; vertical-align: middle; font-family: OgilvySans, Arial, sans-serif; font-size: 13px; font-style: normal; text-decoration: none; text-align: center; color: {{$THEME_TXT_COLOR}};">
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40" style="margin: 0; font-size: 40px; line-height: 40px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>
-						<!-- Hero : Start -->
-						{{if isset($global->HERO->IMAGE)}}<tr>
-							<td align="center" style="margin: 0;">
-								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
-								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
-									<tr>
-										<td class="hero-img-wrapper" width="580" align="left" valign="top" style="margin: 0; width: 100%; max-width: 580px; max-height: 500px; height: auto;">
-											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none;">
-												<img src="{{$global->HERO->IMAGE}}" alt="{{$global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="-ms-interpolation-mode: bicubic; border: 0; margin: 0; padding: 0; text-decoration: none; width: 100%; max-width: 580px; max-height: 500px; height: auto; display: block; font-family: OgilvySans, Arial, sans-serif; font-size: 20px; line-height: 30px; text-align: center; word-wrap: normal; color: {{$THEME_TXT_COLOR}};">
-											</a>
-										</td>
-									</tr>
-								</table>
-								<!--[if (gte mso 9)|(IE)]></td></tr></tbody></table><![endif]-->
-							</td>
-						</tr>
-						<tr>
-							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>{{/if}}
-						{{if isset($global->HERO->TITLE)}}<tr>
-							<td class="email-container-inner" align="left" valign="top" style="margin: 0; vertical-align: top;">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
-									<tr>
-										<td class="hero-h1" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 40px; line-height: 38px; padding: 0; color: {{$THEME_TXT_COLOR}};">
-											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 40px; line-height: 38px; padding: 0; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->TITLE}}</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="hero-body-txt" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 18px; padding-top: 10px; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
-						</tr>{{/if}}
-						<!-- Hero : End -->
-					</table>
-				</td>
-			</tr>
-		</table>
+		{{include file='module_header.tpl'}}
 		<!-- Email Header : End -->
 		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
-		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 606px; max-width: 606px; margin: auto; font-size: 0px;">
-			
+		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; width: 606px; max-width: 606px; margin: auto; font-size: 0px;">
 			{{foreach $sections as $section_index => $section}}
 			{{assign var=sectionTitle value=$section[0]}}
 			{{assign var=mySection value=$section[1]}}
-
 			{{if !empty( $mySection )}}<tr>
 				<td class="section-title-container" style="margin: 0; padding: 0px 13px; vertical-align: top;">
-					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 						<tr>
-							<td style="margin: 0;"><img src="templates/images/tartan4_2x.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
+							<td style="margin: 0;"><img src="https://sf-asset-manager.s3.amazonaws.com/97311/586/681.png" alt class="tartan4" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 4px;"></td>
 						</tr>
 						<tr>
 							<td class="section-title-text" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 28px; text-align: left; padding: 35px 0px 22px;">
@@ -317,19 +285,19 @@
 		</table>
 		<!-- Email Body : End -->
 		<!-- Footer : Start -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$COLOR_OFF_WHITE}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 100%;">
+		<table class="fullbleed-container" align="center" bgcolor="{{$COLOR_OFF_WHITE}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; width: 100%;">
 			<tr>
 				<td align="center" bgcolor="{{$COLOR_OFF_WHITE}}" valign="top" style="margin: 0;">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
+					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<tr>
 							<td class="email-container-inner" style="margin: 0; vertical-align: top;">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 									<tr>
 										<th class="footer-item-container" valign="top" align="left" role="presentation">
-											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 												<tr>
 													<td class="footer-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic; padding-right: 30px;">
 														Contributions, questions, feedback,<br>
@@ -339,7 +307,7 @@
 											</table>
 										</th>
 										<th class="footer-item-container" align="left" role="presentation">
-											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 												<tr>
 													<td class="social-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">
 														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">Facebook</span></a><br>
@@ -358,7 +326,7 @@
 							<td class="gap20" style="margin: 0; font-size: 20px; line-height: 20px; mso-line-height-rule: exactly;">&nbsp;</td>
 						</tr>
 						<tr>
-							<td style="margin: 0;"><img src="templates/images/tartan8_2x.png" alt class="tartan8" width="277" height="8" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;"></td>
+							<td style="margin: 0;"><img src="https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png" alt class="tartan8" width="277" height="8" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;"></td>
 						</tr>
 					</table>
 				</td>

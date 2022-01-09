@@ -59,6 +59,34 @@
 			}
 		}
 
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+		@media (prefers-color-scheme: dark) {
+			/* Apply styles to clients that do not apply their own stlyes */
+
+			.header-bg{
+				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+			}
+			/* Try to override Outlook darkmode */
+
+    /*{{*data-ogsc (for “original style color”)
+    data-ogac (for “original attribute color”)
+    data-ogsb (for “original style background”)
+    data-ogab (for “original attribute background”)*}}*/
+
+			[data-ogsb] .header-bg {
+				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+			}
+			.hero-h1 * {
+				color: {{$THEME_TXT_COLOR}} !important;
+			}
+			[data-ogsc] .hero-h1 * {
+				color: {{$THEME_TXT_COLOR}} !important;
+			}
+		}
+
 		@media screen yahoo {
 			* {
 				overflow: visible!important
@@ -76,6 +104,10 @@
 			}
 			.email-container-inner {
 				padding: 0 13px 0 13px !important;
+			}
+			.hero-h1 * {
+				font-size: 28px !important;
+				line-height: 26px !important;
 			}
 			th, .mod-card-wrapper {
 				display: block !important;

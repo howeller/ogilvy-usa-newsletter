@@ -1,8 +1,8 @@
 {{*<!-- Card Module $moduleCount : Start -->*}}
-				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; display: inline-block;">
+				<table class="mod-card-container" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; display: inline-block;">
 					<tr>
 						<td class="mod-card-container-inner" align="center" valign="top" style="margin: 0; padding: 13px;">
-							<table class="mod-card-wrapper" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top; width: 277px; max-width: 277px;">
+							<table class="mod-card-wrapper" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; width: 277px; max-width: 277px;">
 								{{if $module->IMAGE != ''}}<tr>
 									<td class="mod-img-container" align="center" valign="top" style="margin: 0; padding-bottom: 10px;">
 										<a href="{{$module->LINKURL}}" target="_blank" style="text-decoration: none;">
@@ -12,7 +12,7 @@
 								</tr>{{/if}}
 								<tr>
 									<td align="left" valign="top" style="margin: 0;">
-										<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; vertical-align: top;">
+										<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 											<tr>
 												<td class="card-title" align="left" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 22px; padding-bottom: 10px;">
 													<a href="{{$module->LINKURL}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 22px;">{{$module->TITLE}}</a>

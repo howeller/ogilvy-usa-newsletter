@@ -2,33 +2,33 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_black_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
-	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_black_2x.png'}}
-	{{$THEME_LOGO_IMG = 'templates/images/header_logo_black_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_red_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037865-header_logo_red_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'templates/images/tartan8_2x.png'}}
-	{{$THEME_TITLE_IMG = 'templates/images/header_title_white_2x.png'}}
-	{{$THEME_LOGO_IMG = 'https://assets.ogilvy.com/ogassets/ogmega/d894819bf1e4736a88e5ecabcb3e777375a24e04/1572037841-header_logo_white_2x.png'}}
+	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
+	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{/if}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
@@ -37,16 +37,32 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no" />
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
 	<meta name="x-apple-disable-message-reformatting" />
 	<!--[if !mso]><!-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!--<![endif]-->
-	<title>The Pulse : Ogilvy</title>
+	<title>The Pulse : Ogilvy {{$global->VERSION}}</title>
 	<!--[if (gte mso 9)|(IE)]>
-	<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+	<xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
 	<![endif]-->
 	<!--[if gte mso 9]>
-	<style> .vml-p {margin:0;font-size:0;line-height:0;} v\:* {behavior:url(#default#VML);}</style>
+	<style> 
+		.vml-p {
+			margin:0;
+			font-size:0;
+			line-height:0;
+		} 
+		v\:* {
+			behavior:url(#default#VML);
+		}
+	</style>
 	<![endif]-->
 	<!-- styles will be inlined -->
 	<link rel="stylesheet" type="text/css" href="moduleStyles.css"><link rel="stylesheet" type="text/css" href="inlinedStyles.css"><link rel="stylesheet" type="text/css" href="inlinedTextStyles.css">
@@ -58,94 +74,19 @@
 	<div class="hide">{{$global->HEADER_PREHEADER_TEXT}}</div>
 	<center>
 		<!-- Email Header : BEGIN -->
-		<table class="fullbleed-container" align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" border="0" cellspacing="0" cellpadding="0" width="100%" role="main">
-			<tr>
-				<td align="center" bgcolor="{{$THEME_BACKGROUND_COLOR}}" valign="top">
-					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-						<tr>
-							<td>
-								<img src="{{$THEME_TARTAN_IMG}}" alt="" class="tartan8" width="277">
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="email-container-inner">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
-									<tr>
-										<td align="left">
-											<a href="{{$global->HEADER_LINK}}" target="_blank">
-												<img class="header-title header-alt-txt" src="{{$THEME_TITLE_IMG}}" alt="The Pulse" width="123" height="61" style="color:{{$THEME_TXT_COLOR}};" />
-											</a>
-										</td>
-										<td align="right" valign="middle">
-											<a href="{{$global->HEADER_LINK}}" target="_blank">
-												<img class="header-logo header-alt-txt" src="{{$THEME_LOGO_IMG}}" alt="Ogilvy" width="120" height="47" style="color:{{$THEME_TXT_COLOR}};" />
-											</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap40">&nbsp;</td>
-						</tr>
-						<!-- Hero : Start -->
-						{{if isset($global->HERO->IMAGE)}}<tr>
-							<td align="center">
-								<!--[if (gte mso 9)|(IE)]><table width="580" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;width:580px;"><tbody><tr><td width="580" style="padding:0;width:580px;"><![endif]-->
-								<table class="hero-img-wrapper" width="580" border="0" cellpadding="0" cellspacing="0" role="presentation">
-									<tr>
-										<td class="hero-img-wrapper" width="580" align="left" valign="top">
-											<a href="{{$global->HERO->LINKURL}}" target="_blank">
-												<img src="{{$global->HERO->IMAGE}}" alt="{{$global->HERO->TITLE}}" class="hero-img hero-alt-txt" width="580" border="0" style="color:{{$THEME_TXT_COLOR}};" />
-											</a>
-										</td>
-									</tr>
-								</table>
-								<!--[if (gte mso 9)|(IE)]></td></tr></tbody></table><![endif]-->
-							</td>
-						</tr>
-						<tr>
-							<td class="gap20">&nbsp;</td>
-						</tr>{{/if}}
-						{{if isset($global->HERO->TITLE)}}<tr>
-							<td class="email-container-inner" align="left" valign="top">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-									<tr>
-										<td class="hero-h1" style="color:{{$THEME_TXT_COLOR}};">
-											<a href="{{$global->HERO->LINKURL}}" target="_blank" style="color:{{$THEME_TXT_COLOR}};">{{$global->HERO->TITLE}}</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="hero-body-txt" style="color:{{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="gap20">&nbsp;</td>
-						</tr>{{/if}}
-						<!-- Hero : End -->
-					</table>
-				</td>
-			</tr>
-		</table>
+		{{include file='module_header.tpl'}}
 		<!-- Email Header : End -->
 		{{include file='module_executive.tpl'}}
 		<!-- Email Body : BEGIN -->
 		<table class="body-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-			
 			{{foreach $sections as $section_index => $section}}
 			{{assign var=sectionTitle value=$section[0]}}
 			{{assign var=mySection value=$section[1]}}
-
 			{{if !empty( $mySection )}}<tr>
 				<td class="section-title-container">
 					<table border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
-							<td><img src="templates/images/tartan4_2x.png" alt="" class="tartan4" width="277"/></td>
+							<td><img src="https://sf-asset-manager.s3.amazonaws.com/97311/586/681.png" alt="" class="tartan4" width="277"/></td>
 						</tr>
 						<tr>
 							<td class="section-title-text">
@@ -234,7 +175,7 @@
 							<td class="gap20">&nbsp;</td>
 						</tr>
 						<tr>
-							<td><img src="templates/images/tartan8_2x.png" alt="" class="tartan8" width="277" height="8"></td>
+							<td><img src="https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png" alt="" class="tartan8" width="277" height="8"/></td>
 						</tr>
 					</table>
 				</td>

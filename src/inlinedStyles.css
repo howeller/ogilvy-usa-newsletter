@@ -23,7 +23,7 @@ table {
 	border-collapse: collapse;
 	mso-table-lspace: 0pt;
 	mso-table-rspace: 0pt;
-	table-layout: fixed;
+	/*table-layout: fixed;*/
 	vertical-align: top;
 }
 /*table table table {
@@ -103,7 +103,12 @@ center {
 td.email-container-inner, td.body-container-inner {
 	vertical-align: top;
 }
-
+td.header-title-container {
+	padding: 0px 100px 10px 0px;
+}
+/*td.header-logo-container {
+	padding: 0px 100px 10px 0px;
+}*/
 td.section-title-container {
 	padding: 0px 13px;
 	vertical-align: top;
@@ -117,7 +122,7 @@ img.tartan4 {
 	width: 277px;
 	height: 4px;
 }
-img.header-title{
+/*img.header-title{
 	width: 178px;
 	height: 88px;
 }
@@ -125,8 +130,30 @@ img.header-logo {
 	width: 120px;
 	height: 47px;
 	vertical-align: middle;
+}*/
+
+/*.shrinkable {
+	width: 100%;
+	height: auto;
+}*/
+.header-title-wrapper, img.header-title {
+	max-width: 178px;
+	width: 100%;
+	height:auto;
+}
+/*td.header-title-wrapper {
+	padding-bottom: 10px;
+}*/
+.header-logo-wrapper, img.header-logo {
+	max-width: 123px;
+	width: 100%;
+	height:auto;
+	vertical-align: bottom;
 }
 
+/*.hero-bg{
+	color: {{$THEME_BACKGROUND_COLOR}};
+}*/
 .hero-img, .hero-img-wrapper {
 	width: 100%;
 	max-width: 580px;
