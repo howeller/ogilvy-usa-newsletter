@@ -2,31 +2,31 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/688.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{/if}}
@@ -64,6 +64,20 @@
 		}
 	</style>
 	<![endif]-->
+	{{* This only works on OUTLOOK WIN10 for text color only<!--[if gte mso 16]>
+	<style>
+		.hero-h1 {
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist: "0 \{{$THEME_TXT_COLOR}} -1 100000\,100000 \{{$THEME_TXT_COLOR}} -1 100000"
+			color: #ffffff !important;
+		}
+		.hero-body-txt{
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist: "0 \{{$THEME_TXT_COLOR}} -1 100000\,100000 \{{$THEME_TXT_COLOR}} -1 100000"
+			color: #ffffff !important;
+		}
+	</style>
+	<![endif]-->*}}
 	<!-- styles will be inlined -->
 	<link rel="stylesheet" type="text/css" href="moduleStyles.css"><link rel="stylesheet" type="text/css" href="inlinedStyles.css"><link rel="stylesheet" type="text/css" href="inlinedTextStyles.css">
 	<!-- styles will be embedded and not inlined -->

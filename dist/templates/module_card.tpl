@@ -20,7 +20,8 @@
 											</tr>
 											<tr>
 												<td class="body-text" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #545659; font-weight: normal;">
-													{{$module->BODYCOPY}} <a href="{{$module->LINKURL}}" target="_blank" class="cta-text" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #eb3f43;"><span class="cta-text" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #eb3f43;">&#8594;&nbsp;Read&nbsp;more</span></a>
+													{{$module->BODYCOPY}} <a href="{{$module->LINKURL}}" target="_blank" class="cta-text" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #eb3f43; white-space: nowrap;"><span class="cta-text" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #eb3f43; white-space: nowrap;">&rarr;&nbsp;Read&nbsp;more</span></a>
+														{{*<span class="cta-text"><img class="cta-arrow" src="templates/images/cta_arrow_2x.png" alt="&rarr;">&nbsp;Read&nbsp;more</span>*}}
 												</td>
 											</tr>
 										</table>

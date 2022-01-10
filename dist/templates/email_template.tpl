@@ -2,31 +2,31 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/688.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
-	{{$THEME_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
+	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{/if}}
@@ -64,6 +64,20 @@
 		}
 	</style>
 	<![endif]-->
+	{{* This only works on OUTLOOK WIN10 for text color only<!--[if gte mso 16]>
+	<style>
+		.hero-h1 {
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist: "0 \{{$THEME_TXT_COLOR}} -1 100000\,100000 \{{$THEME_TXT_COLOR}} -1 100000"
+			color: #ffffff !important;
+		}
+		.hero-body-txt{
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist: "0 \{{$THEME_TXT_COLOR}} -1 100000\,100000 \{{$THEME_TXT_COLOR}} -1 100000"
+			color: #ffffff !important;
+		}
+	
+	<![endif]-->*}}
 	<!-- styles will be inlined -->
 	
 	<!-- styles will be embedded and not inlined -->
@@ -136,25 +150,25 @@
 		@media (prefers-color-scheme: dark) {
 			/* Apply styles to clients that do not apply their own stlyes */
 
-			.header-bg{
+			.header-bg:not([class^="x_"]){
 				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
 			}
-			/* Try to override Outlook darkmode */
-
-    /*{{*data-ogsc (for &#8220;original style color&#8221;)
-    data-ogac (for &#8220;original attribute color&#8221;)
-    data-ogsb (for &#8220;original style background&#8221;)
-    data-ogab (for &#8220;original attribute background&#8221;)*}}*/
-
-			[data-ogsb] .header-bg {
-				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
-			}
-			.hero-h1 * {
+			.hero-h1:not([class^="x_"]), .hero-body-txt:not([class^="x_"]) {
 				color: {{$THEME_TXT_COLOR}} !important;
 			}
-			[data-ogsc] .hero-h1 * {
-				color: {{$THEME_TXT_COLOR}} !important;
-			}
+		}
+		/* Try to override Outlook darkmode */
+
+		/*{{* data-ogsc (for &#8220;original style color&#8221;)
+		data-ogac (for &#8220;original attribute color&#8221;)
+		data-ogsb (for &#8220;original style background&#8221;)
+		data-ogab (for &#8220;original attribute background&#8221;) *}}*/
+
+		[data-ogsc] .header-bg, [data-ogsb] .header-bg  {
+			background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+		}
+		[data-ogsc] .hero-h1, [data-ogsc] .hero-body-txt{
+			color: {{$THEME_TXT_COLOR}} !important;
 		}
 
 		@media screen yahoo {
@@ -187,9 +201,7 @@
 			td.mod-padding-lr {
  				padding: 0 13px !important;
 			}
-			/*th.mod-exec-container {
-				padding: 0 13px !important;
-			}*/
+
 			th.mod-exec-img {
 				padding-bottom: 25px!important;
 			}
@@ -197,11 +209,6 @@
 				width: 100%;
 				max-width: 400px !important;
 			}
-			/*th.footer-item-container, .footer-txt{
-				text-align: left !important;
-				float: middle !important;
-				padding-bottom: 20px !important;
-			}*/
 		}
 		/* Smaller screens */
 		@media screen and (max-width:500px) {
@@ -299,7 +306,7 @@
 										<th class="footer-item-container" valign="top" align="left" role="presentation">
 											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 												<tr>
-													<td class="footer-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic; padding-right: 30px;">
+													<td class="footer-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic; padding: 0px 30px 20px 0px;">
 														Contributions, questions, feedback,<br>
 														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;"><span class="footer-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;">{{$global->FOOTER_LINK_TEXT}}</span></a>
 													</td>

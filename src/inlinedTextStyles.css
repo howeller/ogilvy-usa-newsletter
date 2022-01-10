@@ -1,5 +1,5 @@
 /*
-	Outlook doesn't like padding on paragraph, div or anchor tags.
+	Outlook doesn't like padding on paragraph, div or anchor tags. Doesn't like more than 1 class on element.
 */
 
 img.header-alt-txt, img.footer-alt-txt{
@@ -65,6 +65,7 @@ img.hero-alt-txt{
 
 .cta-text {
 	color: #eb3f43;
+	white-space: nowrap;
 }
 /* Recap Links Section 
 
@@ -109,6 +110,7 @@ img.mod-img-alt-txt{
 .footer-txt{
 	font-style: italic;
 }
+
 .social-txt{
 	font-style: normal;
 	text-decoration: none;

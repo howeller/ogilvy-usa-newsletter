@@ -9,10 +9,10 @@ $config->emailSheetID = '7500895488370564';
 $config->mainTemplate = 'templates/email_template.tpl';
 $config->errorTemplate = 'templates/errors.tpl';
 
-$config->fromName = 'Ogilvy USA Email Preview';
+$config->fromName = 'Ogilvy The Pulse Email Preview';
 $config->FromAddress = 'preview_noreply@dxa.ogilvy-digital.com';
-$config->subjectPrefix = 'Ogilvy USA Newsletter Preview: ';
-$config->downloadPrefix = 'Ogilvy_USA_Newsletter_';
+$config->subjectPrefix = 'Ogilvy The Pulse Newsletter Preview: ';
+$config->downloadPrefix = 'Ogilvy_The_Pulse_Newsletter_';
 
 $config->server = true;
 if( strpos( $_SERVER['SERVER_NAME'], 'ogilvy-digital.com' ) === false ) {

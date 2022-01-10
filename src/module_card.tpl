@@ -20,7 +20,8 @@
 											</tr>
 											<tr>
 												<td class="body-text">
-													{{$module->BODYCOPY}} <a href="{{$module->LINKURL}}" target="_blank" class="cta-text"><span class="cta-text">→&nbsp;Read&nbsp;more</span></a>
+													{{$module->BODYCOPY}} <a href="{{$module->LINKURL}}" target="_blank" class="cta-text"><span class="cta-text">&rarr;&nbsp;Read&nbsp;more</span></a>
+														{{*<span class="cta-text"><img class="cta-arrow" src="templates/images/cta_arrow_2x.png" alt="&rarr;"/>&nbsp;Read&nbsp;more</span></a>*}}
 												</td>
 											</tr>
 										</table>

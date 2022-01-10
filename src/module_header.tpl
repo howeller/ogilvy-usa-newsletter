@@ -5,7 +5,7 @@
 					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
 							<td>
-								<img src="{{$THEME_TARTAN_IMG}}" alt="" class="tartan8" width="277"/>
+								<img src="{{$THEME_HEADER_TARTAN_IMG}}" alt="" class="tartan8" width="277"/>
 							</td>
 						</tr>
 						<tr>

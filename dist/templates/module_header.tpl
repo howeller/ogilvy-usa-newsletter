@@ -5,7 +5,7 @@
 					<table class="email-container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; width: 580px; max-width: 580px; margin: auto; font-size: 0px;">
 						<tr>
 							<td style="margin: 0;">
-								<img src="{{$THEME_TARTAN_IMG}}" alt class="tartan8" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;">
+								<img src="{{$THEME_HEADER_TARTAN_IMG}}" alt class="tartan8" width="277" style="-ms-interpolation-mode: bicubic; border: 0; display: block; margin: 0; padding: 0; text-decoration: none; width: 277px; height: 8px;">
 							</td>
 						</tr>
 						<tr>

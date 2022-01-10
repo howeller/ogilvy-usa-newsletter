@@ -1,5 +1,5 @@
 /* 
-	Outlook doesn't like padding on paragraph, div or anchor tags.
+	Outlook doesn't like padding on paragraph, div or anchor tags. Doesn't like more than 1 class on element.
 */
 html, body {
 	background: white;
@@ -85,7 +85,6 @@ center {
 }
 .fullbleed-container {
 	width: 100%;
-	/*background-color: #eb3f43;*/
 }
 .body-container {
 	/* 13 - 277 - 13 - 13 - 277 - 13 */
@@ -132,18 +131,12 @@ img.header-logo {
 	vertical-align: middle;
 }*/
 
-/*.shrinkable {
-	width: 100%;
-	height: auto;
-}*/
 .header-title-wrapper, img.header-title {
 	max-width: 178px;
 	width: 100%;
 	height:auto;
 }
-/*td.header-title-wrapper {
-	padding-bottom: 10px;
-}*/
+
 .header-logo-wrapper, img.header-logo {
 	max-width: 123px;
 	width: 100%;
@@ -151,9 +144,6 @@ img.header-logo {
 	vertical-align: bottom;
 }
 
-/*.hero-bg{
-	color: {{$THEME_BACKGROUND_COLOR}};
-}*/
 .hero-img, .hero-img-wrapper {
 	width: 100%;
 	max-width: 580px;
@@ -168,6 +158,6 @@ img.header-logo {
 /* Footer */
 
 td.footer-txt {
-	padding-right: 30px;
+	padding: 0px 30px 20px 0px;
 }
 

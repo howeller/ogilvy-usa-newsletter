@@ -66,25 +66,25 @@
 		@media (prefers-color-scheme: dark) {
 			/* Apply styles to clients that do not apply their own stlyes */
 
-			.header-bg{
+			.header-bg:not([class^="x_"]){
 				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
 			}
-			/* Try to override Outlook darkmode */
-
-    /*{{*data-ogsc (for “original style color”)
-    data-ogac (for “original attribute color”)
-    data-ogsb (for “original style background”)
-    data-ogab (for “original attribute background”)*}}*/
-
-			[data-ogsb] .header-bg {
-				background-color: {{$THEME_BACKGROUND_COLOR}} !important;
-			}
-			.hero-h1 * {
+			.hero-h1:not([class^="x_"]), .hero-body-txt:not([class^="x_"]) {
 				color: {{$THEME_TXT_COLOR}} !important;
 			}
-			[data-ogsc] .hero-h1 * {
-				color: {{$THEME_TXT_COLOR}} !important;
-			}
+		}
+		/* Try to override Outlook darkmode */
+
+		/*{{* data-ogsc (for “original style color”)
+		data-ogac (for “original attribute color”)
+		data-ogsb (for “original style background”)
+		data-ogab (for “original attribute background”) *}}*/
+
+		[data-ogsc] .header-bg, [data-ogsb] .header-bg  {
+			background-color: {{$THEME_BACKGROUND_COLOR}} !important;
+		}
+		[data-ogsc] .hero-h1, [data-ogsc] .hero-body-txt{
+			color: {{$THEME_TXT_COLOR}} !important;
 		}
 
 		@media screen yahoo {
@@ -117,9 +117,7 @@
 			td.mod-padding-lr {
  				padding: 0 13px !important;
 			}
-			/*th.mod-exec-container {
-				padding: 0 13px !important;
-			}*/
+
 			th.mod-exec-img {
 				padding-bottom: 25px!important;
 			}
@@ -127,11 +125,6 @@
 				width: 100%;
 				max-width: 400px !important;
 			}
-			/*th.footer-item-container, .footer-txt{
-				text-align: left !important;
-				float: middle !important;
-				padding-bottom: 20px !important;
-			}*/
 		}
 		/* Smaller screens */
 		@media screen and (max-width:500px) {

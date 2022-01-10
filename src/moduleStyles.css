@@ -56,3 +56,9 @@ table.mod-exec-wrapper th {
 th.mod-exec-img {
 	padding-right: 30px;
 }
+img.cta-arrow { 
+	display: inline-block; 
+	vertical-align: middle; 
+	width: 11px;
+	padding-bottom: 2px;
+}
