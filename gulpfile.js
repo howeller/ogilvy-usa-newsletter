@@ -41,4 +41,4 @@ function buildEmail(isTest=false) {
 gulp.task('build:email', () => { return buildEmail(false)}); // inline's CSS
 gulp.task('build:test', () => { return buildEmail(true)}); // Builds static HTML + copies images
 gulp.task('default', gulp.series('build:email'));
-gulp.task('watch', () => { return gulp.watch(dir.src+'**/**', gulp.series('default')) });
+gulp.task('watch', function() { return gulp.watch(dir.src+'**/**', gulp.series('default')) });
