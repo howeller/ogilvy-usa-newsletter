@@ -76,7 +76,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="hero-body-txt" style="color:{{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
+										<td class="hero-body-txt" style="color:{{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}} <a href="{{$global->HERO->LINKURL}}" target="_blank" class="cta-text"><span class="hero-cta-text" style="color:{{$THEME_CTA_COLOR}}">&rarr;&nbsp;Read&nbsp;more</span></a></td>
 									</tr>
 								</table>
 							</td>

@@ -76,7 +76,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="hero-body-txt" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 18px; padding-top: 10px; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}}</td>
+										<td class="hero-body-txt" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 18px; padding-top: 10px; color: {{$THEME_TXT_COLOR}};">{{$global->HERO->BODYCOPY}} <a href="{{$global->HERO->LINKURL}}" target="_blank" class="cta-text" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #eb3f43; white-space: nowrap;"><span class="hero-cta-text" style="color:{{$THEME_CTA_COLOR}}">&rarr;&nbsp;Read&nbsp;more</span></a></td>
 									</tr>
 								</table>
 							</td>

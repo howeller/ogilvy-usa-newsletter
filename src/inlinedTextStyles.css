@@ -49,7 +49,7 @@ img.hero-alt-txt{
  color: #A6A6A8;
 }
 
-.body-text, .body-text-bold, .cta-text {
+.body-text, .body-text-bold, .cta-text, .footer-txt, .social-txt {
 	font-family: OgilvySans, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -67,51 +67,20 @@ img.hero-alt-txt{
 	color: #eb3f43;
 	white-space: nowrap;
 }
-/* Recap Links Section 
-
-td.mod-recap-title{
-	color: #eb3f43;
-	font-family: OgilvySans, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 18px;
-	padding-bottom: 5px;
-}
-.mod-recap-body-txt, .mod-recap-body-txt a{
-	color: #000000;
-	font-family: OgilvySans, Arial, sans-serif;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 15px;
-}
-td.mod-recap-body-txt{
-	padding-top: 10px;
-}
-img.mod-img-alt-txt{
-	font-family: OgilvySans, Arial, sans-serif;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 22px;
-	text-align: center;
-}*/
-
 
 
 /* Footer */
 
-.footer-txt, .social-txt{
+.footer-txt, .social-txt {
 	color: #000000;
-	font-family: OgilvySans, Arial, sans-serif;
 	font-weight: normal;
-	font-size: 13px;
-	line-height: 15px;
 }
 
-.footer-txt{
+.footer-txt {
 	font-style: italic;
 }
 
-.social-txt{
+.social-txt {
 	font-style: normal;
 	text-decoration: none;
 }

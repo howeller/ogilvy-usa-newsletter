@@ -2,30 +2,35 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_CTA_COLOR = '#FBCECE'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/688.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_CTA_COLOR = '#000000'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_CTA_COLOR = '#000000'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
+	{{$THEME_CTA_COLOR = '#eb3f43'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_CTA_COLOR = '#FBCECE'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
@@ -306,9 +311,9 @@
 										<th class="footer-item-container" valign="top" align="left" role="presentation">
 											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 												<tr>
-													<td class="footer-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic; padding: 0px 30px 20px 0px;">
+													<td class="footer-txt" valign="top" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: italic; padding: 0px 30px 20px 0px;">
 														Contributions, questions, feedback,<br>
-														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;"><span class="footer-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: italic;">{{$global->FOOTER_LINK_TEXT}}</span></a>
+														Please email <a class="footer-txt" href="{{$global->FOOTER_LINK}}" target="_blank" style="text-decoration: none; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: italic;"><span class="footer-txt" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: italic;">{{$global->FOOTER_LINK_TEXT}}</span></a>
 													</td>
 												</tr>
 											</table>
@@ -316,11 +321,11 @@
 										<th class="footer-item-container" align="left" role="presentation">
 											<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top;">
 												<tr>
-													<td class="social-txt" valign="top" style="margin: 0; color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">
-														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">Facebook</span></a><br>
-														<a href="https://twitter.com/Ogilvy" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">Twitter</span></a><br>
-														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">instagram</span></a><br>
-														<a href="https://www.linkedin.com/company/ogilvy/" class="social-txt" target="_blank" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;"><span class="social-txt" style="color: #000000; font-family: OgilvySans, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 15px; font-style: normal; text-decoration: none;">LinkedIn</span></a><br>
+													<td class="social-txt" valign="top" style="margin: 0; font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;">
+														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;"><span class="social-txt" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;">Facebook</span></a><br>
+														<a href="https://twitter.com/Ogilvy" class="social-txt" target="_blank" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;"><span class="social-txt" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;">Twitter</span></a><br>
+														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;"><span class="social-txt" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;">Instagram</span></a><br>
+														<a href="https://www.linkedin.com/company/ogilvy/" class="social-txt" target="_blank" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;"><span class="social-txt" style="font-family: OgilvySans, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;">LinkedIn</span></a><br>
 													</td>
 												</tr>
 											</table>

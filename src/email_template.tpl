@@ -2,30 +2,35 @@
 {{if $global->THEME=='BLACK'}}
 	{{$THEME_BACKGROUND_COLOR = '#000000'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_CTA_COLOR = '#FBCECE'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/688.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
 {{elseif ($global->THEME=='LIGHT GRAY') or ($global->THEME=='LIGHT GREY')}}
 	{{$THEME_BACKGROUND_COLOR = '#A6A6A8'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_CTA_COLOR = '#000000'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='DARK ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#F58E8F'}}
 	{{$THEME_TXT_COLOR = '#000000'}}
+	{{$THEME_CTA_COLOR = '#000000'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/680.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/684.png'}}
 {{elseif $global->THEME=='LIGHT ROSE'}}
 	{{$THEME_BACKGROUND_COLOR = '#FBCECE'}}
 	{{$THEME_TXT_COLOR = '#eb3f43'}}
+	{{$THEME_CTA_COLOR = '#eb3f43'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/683.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/685.png'}}
 {{else}}
 	{{$THEME_BACKGROUND_COLOR = '#eb3f43'}}
 	{{$THEME_TXT_COLOR = '#ffffff'}}
+	{{$THEME_CTA_COLOR = '#FBCECE'}}
 	{{$THEME_HEADER_TARTAN_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/686.png'}}
 	{{$THEME_TITLE_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/682.png'}}
 	{{$THEME_LOGO_IMG = 'https://sf-asset-manager.s3.amazonaws.com/97311/586/687.png'}}
@@ -175,7 +180,7 @@
 													<td class="social-txt" valign="top">
 														<a href="https://www.facebook.com/ogilvy" class="social-txt" target="_blank"><span class="social-txt">Facebook</span></a><br />
 														<a href="https://twitter.com/Ogilvy" class="social-txt" target="_blank"><span class="social-txt">Twitter</span></a><br />
-														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank"><span class="social-txt">instagram</span></a><br />
+														<a href="https://instagram.com/ogilvy/" class="social-txt" target="_blank"><span class="social-txt">Instagram</span></a><br />
 														<a href="https://www.linkedin.com/company/ogilvy/" class="social-txt" target="_blank"><span class="social-txt">LinkedIn</span></a><br />
 													</td>
 												</tr>
